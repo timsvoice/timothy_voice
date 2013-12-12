@@ -1,0 +1,38 @@
+/*  Color
+==============
+*/
+
+
+@import "variables_mixins";
+
+#colors {
+  float:left;
+  display:inline-block;
+}
+
+#color_block {
+  height:744px;
+    #colorA {
+      height:460px;
+      background-color:$colorA;
+    }
+    #colorB {
+      height:284px;
+       background-color:$colorB;
+    }
+    #colorCD {
+      height:284px;  
+    }
+      #colorC {
+        height:176px;
+        width:176px;
+        background-color:$colorC;
+      }
+      #colorD {
+        height:108px;
+        width:176px;
+        background-color:$colorD;
+      }
+}
+
+

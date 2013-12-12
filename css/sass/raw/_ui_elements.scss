@@ -1,0 +1,90 @@
+/*  UI Elements
+==========
+*/
+
+@import "variables_mixins";
+
+@mixin textField ($textfield_border_color: $colorA, $textfield_border: 2px) {
+  border:$textfield_border solid $textfield_border_color;
+  padding:5px;
+  vertical-align:middle;
+}
+
+@mixin submit ($submit_color: white, $submit_border_color: $colorA, $submit_border: 2px) {
+  border:$submit_border solid $submit_border_color;
+  background-color:$submit_color;
+  padding:5px;
+}
+
+@mixin textarea ($textarea_color: white, $textarea_border_color: $colorA, $textarea_border: 2px) {
+  border:$textarea_border solid $textarea_border_color;
+  background-color:$textarea_color;
+  padding:5px;
+}
+
+@mixin button ($button_color: $colorA, $button_border: 2px solid $colorA) {
+  display:block;
+  float:left;
+  padding:0 7px;
+  background-color:$button_color;
+  border:$button_border;
+  line-height:140%;
+  text-decoration:none;
+  cursor:pointer;
+}
+
+
+/*  Navigation
+============
+*/
+
+#nav_container {
+  border-bottom:2px solid $colorA;
+}
+
+#elements {
+  display:inline-block;
+  float:left; 
+}
+
+
+/*  Iconography
+=============
+*/
+
+.icon_images{
+  text-decoration: none;
+  position: relative;
+  float:right;
+  margin-left:10px;
+}
+
+/*
+#icon_github:hover {
+  background-color:$color_github;
+}
+
+#icon_zerply:hover {
+  background-color:$color_zerply;
+}
+
+#icon_twitter:hover {
+  background-color:$color_twitter;
+}
+*/
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?') format('eot'), url('../fonts/icomoon.woff') format('woff'), url('../fonts/icomoon.ttf') format('truetype');
+}
+
+#icon_sheet {
+  height:60px;
+  width:195px;
+}
+
+.search_icon {
+  color: white;
+}
+
+
+

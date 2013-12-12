@@ -1,0 +1,33 @@
+/*	Images
+============
+*/
+
+#large_format_img_container,
+#medium_format_img_container,
+#small_format_img_container,
+#tall_format_img_container,
+#thin_format_img_container,
+#micro_format_img_container {
+  margin:30px 0px 0px 0px;
+}
+
+#imagery h2 {
+  margin:0px;
+}
+
+/*  Simple fluid media
+======================*/
+
+figure {
+  position: relative;
+}
+figure img, figure object, figure embed, figure video {
+  max-width: 100%;
+  display: block;
+}
+img {
+  max-width:100%;
+  height:auto;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}

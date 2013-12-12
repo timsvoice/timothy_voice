@@ -1,0 +1,82 @@
+# TUDKS
+## project workflow
+
+### discovery
+		
+	##### client interview
+		
+		goals
+			- to direct potential employers and network connections to Zerply, Github and Twitter
+			- contain brief bio
+			- mobile friendly bio/about
+			- to eventually house custom portfolio 
+		audience
+			- potential employers
+			- network connection
+		technical priorities
+			- mobile friendly
+			- strong foundation, ready for further development
+			- HTML5 + CSS3
+		timeline
+			- 6 hours						
+
+### inspiration
+		
+		##### method
+				mood board (mood images)
+				precedent sites
+				aesthetic
+
+		##### deliverable
+				moodbook
+
+#### milestone I 
+	project spec sheet and timeline
+	contract
+	moodbook
+	domain purchase
+
+### implementation
+		
+		##### content audit
+				existing content
+				images
+				text
+
+		##### CMS selection
+				- MODx
+
+		##### html prototype
+				organize existing content
+				information hirearchy
+
+#### milestone II 
+	html prototype
+	cms selection
+
+		##### visual identity
+				wireframes
+				indesign mockup
+				stylesheet template
+
+#### milestone III 
+	mockup and styleguide
+
+		##### production
+				html + css completion
+				cms structure
+
+#### milestone IV 
+	working prototype
+
+		##### design review
+				project specsheet evaluation
+				client review
+
+#### milestone V
+	sign off/revision 
+
+
+
+
+

@@ -1,0 +1,28 @@
+/*	Branding
+============*/
+
+@import "variables_mixins";
+
+@mixin branding ($branding_width: 0px, $branding_height: 0px) {
+  background:url('../../assets/images/branding.png') repeat;
+  background-size:cover;
+  width:$branding_width; 
+  height:$branding_height;
+  display:block;
+}
+
+#branding {
+ 	
+}
+
+#branding_background {
+	position:absolute;
+	background-color:$colorA;
+	height:109px;
+	width:50%;
+	margin:83.429px 0px 0px 0px;
+}
+
+#branding:hover {
+
+}

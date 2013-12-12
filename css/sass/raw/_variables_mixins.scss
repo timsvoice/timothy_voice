@@ -1,0 +1,39 @@
+/*  Color
+============
+*/
+$colorA:hsla(0,0%,0%, 1); 
+$colorB:hsla(100,100%,100%, 1);
+$colorC:hsla(5,84%,49%, 1); //#E62514
+$colorD:hsla(0,0%,0%, 1);
+$color_twitter:hsla(212,100%,63%, 1); //#429AFF
+$color_zerply:hsla(88,33%,51%, 1); //#85AB59
+$color_github:hsla(165,2%,64%, 1); //#A1A5A4
+
+$body_pattern:none;
+$body_color:black;
+$container_pattern:rgba(255,255,255, 1);
+
+/*  Choose $body_pattern or $body_color 
+====================================
+*/
+body {
+  background:$body_pattern;
+}
+
+/*  Typography
+=============
+*/
+$icon_color:black;
+$link_color:$colorA;
+$link_color_hover:$colorC;
+
+/*  Structure
+============
+*/
+
+/*  UI Elements
+============
+*/
+$buttoncolor_primary:$colorA;
+$buttoncolor_secondary:$colorB;
+

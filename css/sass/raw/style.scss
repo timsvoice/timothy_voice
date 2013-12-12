@@ -1,0 +1,142 @@
+/*  Style
+=========
+*/
+
+@import "resets";
+@import "ggs_baseline";
+@import "variables_mixins";
+@import "layout";
+@import "branding";
+@import "color";
+@import "typography";
+@import "imagery";
+@import "ui_elements";
+
+
+/*  Structure
+=============
+*/
+
+header#project_name {
+  margin: none;
+}
+
+#headers {
+  display:inline-block;
+}
+
+body.container {
+  overflow:hidden;
+  background-color:$container_pattern;
+  margin:50px auto;
+  padding:40px;
+}
+
+#body {
+  clear:both;
+}
+
+article {
+}
+
+section {
+}
+
+#font_weights_styles {
+  float:left;
+  display:inline-block;
+}
+
+#icon_images {
+  margin-top: 36px;
+}
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+/*  Forms and UI Elements
+=======================
+*/
+
+form [data-icon]:before {
+ font-size:19px;
+}
+
+button, button:hover {
+  @include button($button_color: $colorA, $button_border: 0px);
+
+  padding:7px 15px 3px;
+}
+
+button:hover {
+  color:$colorA;
+}
+
+textarea {
+  @include textarea ($textarea_color: white, $textarea_border_color: $colorA, $textarea_border: 2px);
+}
+
+input[type="text"] {
+  @include textField ($textfield_border_color: $colorA, $textfield_border: 2px);
+  
+  float:left;
+  height:10px;
+  width:120px;
+}
+
+input[type="submit"] {
+  @include submit (white,none,0px);
+}
+
+
+/*  Search
+==========*/
+
+input[type="text"]#search {
+  @include textField ($textfield_border_color: $colorA, $textfield_border: 2px);
+
+  float:left;
+  clear:both;
+  display:inline-block;
+  margin:0px 0px 10px 0px;
+  height:25px;
+  text-transform:uppercase;
+
+  padding:0 7px;
+  line-height:140%;
+  text-decoration:none;
+  cursor:pointer;
+}
+
+.search_icon[data-icon]:before  {
+  font-family: icomoon;
+  font-size:19px; 
+  content: attr(data-icon);
+  speak: none;
+  color:white;
+  vertical-align: middle; 
+}
+
+#search_input button {
+  @include button($button_color: $colorA, $button_border: 0px);
+  height:29px;
+}
+
+/*  Login
+=========*/
+
+input[type="text"]#username, input[type="password"]#password {
+ @include textField ($textfield_border_color: green, $textfield_border: 2px);
+
+ float:left;
+ clear:both;
+ margin:0px 0px 10px 0px;
+ height:40px;
+ font-size:30px;
+ text-transform:uppercase;
+}
