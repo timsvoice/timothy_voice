@@ -1,0 +1,289 @@
+@import "foundation";
+
+/*!
+Theme Name: Timothy oice
+Theme URI: www.timothyvoice.com/timothyvoice
+Description: Theme for Timothy Voice's Portfolio
+Author: Timothy Voice
+Author URI: www.timothyvoice.com
+Version: 1.0
+Tags: portfolio, clean, typography, simple
+*/
+
+/* Table of Contents
+* ============================= 
+*	0 Global
+*	1 Zurb Foundation Imports
+*	2 Variables
+*	3 Navigation
+*	4 UI
+*	5 Structure
+*	6 Content
+*	7 Typography
+*	8 Media Queries
+* =============================  
+*/
+
+/* ============================ 
+0 Global
+============================ */
+@import "compass";
+
+* {
+	font-family: 'ariel';
+}
+
+.alpha {
+	padding-left: 0px !important;
+}
+
+.beta {
+	padding-right: 0px !important;
+}
+
+/* ============================ 
+1 Zurb Foundation Imports 
+============================ */
+
+@import "foundation";
+@import "normalize";
+
+/* ============================ 
+2 Variables 
+============================ */
+
+// colors
+$black:hsla(0,0,0%,1);
+$white:hsla(0,0%,100%, 0.75);
+$gray:hsla(300, 1%, 69%, 0.25);
+$dark-gray:hsla(300, 10%, 25%, 1);
+
+$ggs:hsla(155,68%,25%,1);
+$mallydoor:hsla(0,0,0%,1);
+$octavejournal:hsla(237,48%,45%,1);
+$octavelivingroom:hsla(300, 1%, 69%, 1);
+
+
+// borders and backgrounds
+$background: url('../../assets/images/background.png') repeat;
+
+$light-border:0.25rem solid $black;
+$heavy-border:0.1rem solid ;
+
+// typography
+$font:'Open Sans', sans-serif;
+$heavy-text:800;
+$medium-text:400;
+$light-text:200;
+
+/* ============================ 
+3 Navigation
+============================ */   
+
+.top-bar {
+	height: 4rem;
+	background: white;
+	border-bottom: 1px solid $gray;
+}
+
+.top-bar-section {
+	ul {
+		margin-top: 0.6rem;
+	}
+
+	li.divider {
+		border-right: 1px solid $black;
+	}
+	
+	li:not(.has-form) a:not(.button) {
+		background: white;
+		color: $black;
+		font-size: 1.1rem;
+		font-weight: $light-text;
+	}
+
+	i {
+		font-size: 1.5rem;
+		margin-top: 0.1rem;
+		vertical-align: middle;
+		color: $black;
+	}
+}
+
+.contain-to-grid {
+	background: white;
+}
+
+.orbit-bullets-container {
+	display: none
+}
+
+/* ============================ 
+4 UI
+============================ */   
+
+.orbit-container {
+	margin: 4rem auto;
+	border: 0.5rem solid $black;
+}
+
+a.project.title {
+	h3 {
+		display: inline-block;
+		border-bottom: 0.1rem solid $black;
+	}
+}
+
+.project.visit {
+	height: 2rem;
+	width: 2rem;
+	margin: 0 0.25rem 0.25rem 0;
+	background: $gray;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	&:hover {
+		background: $dark-gray;
+		i {
+			color: $black;
+		}
+	}
+	i {
+		font-size: 2rem;
+		color: $dark-gray;
+	}
+}
+
+.active {
+	background-color: pink;
+	border: pink 1px solid;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.project.thumbnail {
+	position: relative;
+	border: 0.25rem solid $black;
+	z-index: -1;
+	
+}
+
+.project.description {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	padding: 1rem;
+	&.ggs {
+		background: $ggs;
+	}
+	&.mallydoor {
+		background: $mallydoor;
+	}
+	&.octavejournal {
+		background: $octavejournal;
+	}
+	&.octavelivingroom {
+		background: $octavelivingroom;
+	}
+	display: none;
+	a > h3, p {
+		color: white;
+	}
+}
+
+/* ============================ 
+5 Structure
+============================ */   
+
+
+/* ============================ 
+6 Content
+============================ */   
+
+.intro {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	&.name {
+		font-size: 4rem;
+		text-align: center;
+		font-weight: $heavy-text;		
+		color: $black;
+	}
+	&.text {
+		font-size: 2rem;		
+		font-weight: $heavy-text;
+		color: $black;
+	}
+}
+
+.project.list {
+	margin-top: 6rem;
+	margin-bottom: 6rem;
+}
+
+.project.teaser {
+
+}
+
+/* ============================ 
+7 Typography
+============================ */   
+
+
+/* ============================ 
+8 Media Queries
+============================ */   
+
+@media #{-only} { }
+
+@media #{-only} { }
+
+@media #{-only} { }
+
+@media #{-up} { }
+
+@media #{-up} { }
+
+
+
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switch",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
