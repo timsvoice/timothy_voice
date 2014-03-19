@@ -25,7 +25,14 @@ $('.project.teaser').hover(
 });*/
 
 $(function() {
-  $('.intro.text.reveal').hide().fadeIn(4000);
+  $('.intro.text.reveal').hide().fadeIn(500);
+  $( ".intro.text.highlight" ).addClass( "underline" );
+});
+
+$(function() {
+  $('.branding.background').animate({
+  	width: "100%"}, 
+  	750);
 });
 
 });

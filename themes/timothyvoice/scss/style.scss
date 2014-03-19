@@ -33,6 +33,10 @@ Tags: portfolio, clean, typography, simple
 	font-family: 'ariel';
 }
 
+// [class*="column"] + [class*="column"]:last-child {
+// 	float: none;
+// }
+
 .alpha {
 	padding-left: 0px !important;
 }
@@ -54,7 +58,7 @@ Tags: portfolio, clean, typography, simple
 
 // colors
 $black:hsla(0,0,0%,1);
-$white:hsla(0,0%,100%, 0.75);
+$white:hsla(0,0%,100%, 1);
 $gray:hsla(300, 1%, 69%, 0.25);
 $dark-gray:hsla(300, 10%, 25%, 1);
 
@@ -67,7 +71,7 @@ $octavelivingroom:hsla(300, 1%, 69%, 1);
 // borders and backgrounds
 $background: url('../../assets/images/background.png') repeat;
 
-$light-border:0.25rem solid $black;
+$light-border:0.15rem solid $black;
 $heavy-border:0.1rem solid ;
 
 // typography
@@ -83,7 +87,14 @@ $light-text:200;
 .top-bar {
 	height: 4rem;
 	background: white;
-	border-bottom: 1px solid $gray;
+}
+
+.bottom-fixed {
+	width: 100%;
+	left: 0;
+	position: fixed;
+	bottom: 0;
+	z-index: 99;
 }
 
 .top-bar-section {
@@ -112,6 +123,7 @@ $light-text:200;
 
 .contain-to-grid {
 	background: white;
+	border-top: 1px solid $black;
 }
 
 .orbit-bullets-container {
@@ -154,44 +166,20 @@ a.project.title {
 	}
 }
 
-.active {
-	background-color: pink;
-	border: pink 1px solid;
-}
-
 .hidden {
 	visibility: hidden;
+}
+
+.project.container {
+	margin-bottom: 5rem;
 }
 
 .project.thumbnail {
 	position: relative;
 	border: 0.25rem solid $black;
-	z-index: -1;
-	
-}
-
-.project.description {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	height: 100%;
-	width: 100%;
-	padding: 1rem;
-	&.ggs {
-		background: $ggs;
-	}
-	&.mallydoor {
-		background: $mallydoor;
-	}
-	&.octavejournal {
-		background: $octavejournal;
-	}
-	&.octavelivingroom {
-		background: $octavelivingroom;
-	}
-	display: none;
-	a > h3, p {
-		color: white;
+	.orbit-container {
+		margin: 0;
+		border: none;
 	}
 }
 
@@ -205,7 +193,7 @@ a.project.title {
 ============================ */   
 
 .intro {
-	margin-top: 2rem;
+	margin-top: 7rem;
 	margin-bottom: 2rem;
 	&.name {
 		font-size: 4rem;
@@ -220,19 +208,62 @@ a.project.title {
 	}
 }
 
-.project.list {
-	margin-top: 6rem;
-	margin-bottom: 6rem;
+.project {
+	&-container {
+		margin-top: 5rem;
+	}
+	&-description {
+		&-title {
+			font-size: 2rem;
+			font-weight: $heavy-text;
+		}
+		&-text {
+			margin-top: 0;
+			font-size: 1.25rem;
+			color: $dark-gray;
+		}
+	}
+	&-link {
+		background-color: $white;
+		border: $light-border;
+		display: inline-block; 
+	}
+	&-source {
+		background-color: $white;
+		border: $light-border;
+		display: inline-block; 	
+	}
 }
 
-.project.teaser {
-
-}
 
 /* ============================ 
 7 Typography
 ============================ */   
 
+.underline {
+	border-bottom: 2px solid $black;
+}
+
+.branding {
+	&.background {
+		margin-top: 3rem;
+		height: 7rem;
+		width: 1px;
+		background: $black;
+		position: absolute;
+	}
+	&.title {
+		font-size: 5rem;
+		font-weight: $heavy-text;
+		text-transform: uppercase;
+		color: $white;
+		text-align: right;
+		padding-right: 5.5rem;
+		vertical-align: middle;
+		position: absolute;
+		right: 0;
+	}
+}
 
 /* ============================ 
 8 Media Queries

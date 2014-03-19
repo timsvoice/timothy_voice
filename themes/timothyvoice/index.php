@@ -1,73 +1,155 @@
 <?php get_header();?>
 
-<div id="about" class="intro small-10 columns small-centered">
-  <h2 class="intro name">Timothy Voice</h2>
-  <p class="intro text">
-    Process is power 
-    <span class="intro text reveal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, dolores.</span>
-    curiosity over control
-    <span class="intro text reveal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, nulla.</span>
-    right now over just right
-    <span class="intro text reveal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, quo.</span>
-  </p>
+<div class="row about">
+  <div id="about" class="intro small-9 columns small-offset-3">
+    <p class="intro text">
+      <span class="intro text highlight">Process is power</span> 
+      <span class="intro text reveal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, dolores.</span>
+      <span class="intro text highlight">curiosity over control</span> 
+      <span class="intro text reveal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, nulla.</span>
+      <span class="intro text highlight">right now over just right</span>
+      <span class="intro text reveal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, quo.</span>
+    </p>
+  </div>
 </div>
 
-<div class="project list large-10 columns small-centered">
-  <ul class="large-block-grid-2 small-block-grid-1 medium-block-grid-2">
+<div class="row project">
+  
+  <div class="project container small-12 columns">
+    <div class="project-description small-3 columns">
+      <h3 class="project-description-title">
+        Project Title
+      </h3>
+      <p class="project-description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, sunt, iure placeat quidem quam quas earum animi nobis corporis eaque.</p>
+      <button class="project-link">visit</button>
+      <button class="project-source">code</button>
+    </div>
+    <div class="project thumbnail small-9 columns end alpha beta" >
+      <ul data-orbit>
+        <li data-orbit-slide="headline-1">
+          <div>
+            <img class="project image" src="<?php bloginfo('template_url'); ?>/css/assets/ggs_homepage.png" alt="slide 1" />
+          </div>
+        </li>
+        <li data-orbit-slide="headline-2">
+          <div>
+            <img class="project image" src="<?php bloginfo('template_url'); ?>/css/assets/ggs_contact.png" alt="slide 1" />
+          </div>
+        </li>
+        <li data-orbit-slide="headline-3">
+          <div>
+            <img class="project image" src="<?php bloginfo('template_url'); ?>/css/assets/ggs_about.png" alt="slide 1" />
+          </div>
+        </li>
+      </ul>
+      
+      <div class="project visit">
+        <i class="icon-ios7-redo"></i>
+      </div>
+
+    </div>
+  </div> 
+
+  <div class="project container small-12 columns">
+    <div class="project description small-3 columns">
+      <h3 class="project description title">
+        Project Title
+      </h3>
+      <p class="project description text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, sunt, iure placeat quidem quam quas earum animi nobis corporis eaque.</p>
+    </div>
+    <div class="project thumbnail small-9 columns end alpha beta" >
+      <ul data-orbit>
+        <li data-orbit-slide="headline-1">
+          <div>
+            <img class="project image" src="<?php bloginfo('template_url'); ?>/css/assets/mallydoor_homepage.png" alt="slide 1" />
+          </div>
+        </li>
+        <li data-orbit-slide="headline-2">
+          <div>
+            <img class="project image" src="<?php bloginfo('template_url'); ?>/css/assets/mallydoor_homepage.png" alt="slide 1" />
+          </div>
+        </li>
+        <li data-orbit-slide="headline-3">
+          <div>
+            <img class="project image" src="<?php bloginfo('template_url'); ?>/css/assets/mallydoor_homepage.png" alt="slide 1" />
+          </div>
+        </li>
+      </ul>
+      
+      <div class="project visit">
+        <i class="icon-ios7-redo"></i>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="project container small-12 columns">
+    <div class="project description small-3 columns">
+      <h3 class="project description title">
+        Project Title
+      </h3>
+      <p class="project description text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, sunt, iure placeat quidem quam quas earum animi nobis corporis eaque.</p>
+    </div>
+    <div class="project thumbnail small-9 columns end alpha beta" >
+      <ul data-orbit>
+        <li data-orbit-slide="headline-1">
+          <div>
+            <img class="project image" src="<?php bloginfo('template_url'); ?>/css/assets/octavejournal_homepage.png" alt="slide 1" />
+          </div>
+        </li>
+        <li data-orbit-slide="headline-2">
+          <div>
+            <img class="project image" src="<?php bloginfo('template_url'); ?>/css/assets/octavejournal_homepage.png" alt="slide 1" />
+          </div>
+        </li>
+        <li data-orbit-slide="headline-3">
+          <div>
+            <img class="project image" src="<?php bloginfo('template_url'); ?>/css/assets/octavejournal_homepage.png" alt="slide 1" />
+          </div>
+        </li>
+      </ul>
+      
+      <div class="project visit">
+        <i class="icon-ios7-redo"></i>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="project container small-12 columns">
+    <div class="project description small-3 columns">
+      <h3 class="project description title">
+        Project Title
+      </h3>
+      <p class="project description text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, sunt, iure placeat quidem quam quas earum animi nobis corporis eaque.</p>
+    </div>
     
-    <li class="project teaser small-2 columns">
-      <div class="project thumbnail">
-        <div class="project description ggs">
-          <a href="#" class="project title"><h3>Project Title</h3></a>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, eligendi.</p>
-        </div>
-        <img class="project image" src="<?php bloginfo('template_url'); ?>/css/assets/ggs_homepage.png" alt="slide 1" />
-        <div class="project visit">
-          <i class="icon-ios7-redo"></i>
-        </div>
-      </div>      
-    </li>
+    <div class="project thumbnail small-9 columns end alpha beta" >
+      <ul data-orbit>
+        <li data-orbit-slide="headline-1">
+          <div>
+            <img class="project image" src="<?php bloginfo('template_url'); ?>/css/assets/octavelivingroom_workshop.png" alt="slide 1" />
+          </div>
+        </li>
+        <li data-orbit-slide="headline-2">
+          <div>
+            <img class="project image" src="<?php bloginfo('template_url'); ?>/css/assets/octavelivingroom_workshop.png" alt="slide 1" />
+          </div>
+        </li>
+        <li data-orbit-slide="headline-3">
+          <div>
+            <img class="project image" src="<?php bloginfo('template_url'); ?>/css/assets/octavelivingroom_workshop.png" alt="slide 1" />
+          </div>
+        </li>
+      </ul>
+      
+      <div class="project visit">
+        <i class="icon-ios7-redo"></i>
+      </div>
 
-    <li class="project teaser small-2 columns">
-      <div class="project thumbnail">
-        <div class="project description mallydoor">
-          <a href="#" class="project title"><h3>Project Title</h3></a>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, eligendi.</p>
-        </div>
-        <img class="project image" src="<?php bloginfo('template_url'); ?>/css/assets/mallydoor_homepage.png" alt="slide 1" />
-        <div class="project visit">
-          <i class="icon-ios7-redo"></i>
-        </div>
-      </div>      
-    </li>
+    </div>
+  </div>
 
-    <li class="project teaser small-2 columns">
-      <div class="project thumbnail">
-        <div class="project description octavejournal">
-          <a href="#" class="project title"><h3>Project Title</h3></a>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, eligendi.</p>
-        </div>
-        <img src="<?php bloginfo('template_url'); ?>/css/assets/octavejournal_homepage.png" alt="slide 1" />
-        <div class="project visit">
-          <i class="icon-ios7-redo"></i>
-        </div>
-      </div>      
-    </li>
-    <li class="project teaser small-2 columns">
-      <div class="project thumbnail">
-        <div class="project description octaelivingroom">
-          <a href="#" class="project title"><h3>Project Title</h3></a>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, eligendi.</p>
-        </div>
-        <img src="<?php bloginfo('template_url'); ?>/css/assets/octavelivingroom_workshop.png" alt="slide 1" />
-        <div class="project visit">
-          <i class="icon-ios7-redo"></i>
-        </div>
-      </div>      
-    </li>
-  </ul>
 </div>
-
-
 
 <?php get_footer(); ?>
