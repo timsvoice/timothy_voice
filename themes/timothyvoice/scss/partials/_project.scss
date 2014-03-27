@@ -1,0 +1,68 @@
+
+.project {
+	&-container {
+		margin-top: 5rem;
+	}
+	&-description {
+		&-title {
+			font-size: 2rem;
+			font-weight: $heavy-text;
+		}
+		&-text {
+			margin-top: 0;
+			font-size: 1.25rem;
+			color: $dark-gray;
+		}
+	}
+	&-link {
+		background-color: $white;
+		border: $light-border;
+		display: inline-block; 
+	}
+	&-source {
+		background-color: $white;
+		border: $light-border;
+		display: inline-block; 	
+	}
+}
+
+a.project.title {
+	h3 {
+		display: inline-block;
+		border-bottom: 0.1rem solid $black;
+	}
+}
+
+.project.visit {
+	height: 2rem;
+	width: 2rem;
+	margin: 0 0.25rem 0.25rem 0;
+	background: $gray;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	&:hover {
+		background: $dark-gray;
+		i {
+			color: $black;
+		}
+	}
+	i {
+		font-size: 2rem;
+		color: $dark-gray;
+	}
+}
+
+
+.project.container {
+	margin-bottom: 5rem;
+}
+
+.project.thumbnail {
+	position: relative;
+	border: 0.25rem solid $black;
+	.orbit-container {
+		margin: 0;
+		border: none;
+	}
+}

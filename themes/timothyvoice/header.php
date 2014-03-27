@@ -76,10 +76,12 @@
   
   <body>
     <div class="container">
-        <div class="branding small-11 columns alpha">
-            <div class="branding background"></div>
-            <h1 class="branding title">
+        <div class="row">
+            <div class="branding small-5 columns alpha">
+            <div class="branding-background"></div>
+            <h1 class="branding-title">
                 Timothy Voice
             </h1>
+        </div>
         </div>
             

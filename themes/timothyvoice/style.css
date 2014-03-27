@@ -1,3 +1,190 @@
+/*!
+Theme Name: Timothy Voice
+Theme URI: www.timothyvoice.com/timothyvoice
+Description: Theme for Timothy Voice's Portfolio
+Author: Timothy Voice
+Author URI: www.timothyvoice.com
+Version: 1.0
+Tags: portfolio, clean, typography, simple
+*/
+/* 
+ * 	Core Owl Carousel CSS File
+ *	v1.3.2
+ */
+/* clearfix */
+/* line 7, ../scss/vendor/_owl-carousel.scss */
+.owl-carousel .owl-wrapper:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* display none until init */
+/* line 16, ../scss/vendor/_owl-carousel.scss */
+.owl-carousel {
+  display: none;
+  position: relative;
+  width: 100%;
+  -ms-touch-action: pan-y;
+}
+
+/* line 22, ../scss/vendor/_owl-carousel.scss */
+.owl-carousel .owl-wrapper {
+  display: none;
+  position: relative;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+/* line 27, ../scss/vendor/_owl-carousel.scss */
+.owl-carousel .owl-wrapper-outer {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* line 32, ../scss/vendor/_owl-carousel.scss */
+.owl-carousel .owl-wrapper-outer.autoHeight {
+  -webkit-transition: height 500ms ease-in-out;
+  -moz-transition: height 500ms ease-in-out;
+  -ms-transition: height 500ms ease-in-out;
+  -o-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out;
+}
+
+/* line 40, ../scss/vendor/_owl-carousel.scss */
+.owl-carousel .owl-item {
+  float: left;
+}
+
+/* line 43, ../scss/vendor/_owl-carousel.scss */
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div {
+  cursor: pointer;
+}
+
+/* line 47, ../scss/vendor/_owl-carousel.scss */
+.owl-controls {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* mouse grab icon */
+/* line 57, ../scss/vendor/_owl-carousel.scss */
+.grabbing {
+  cursor: url(grabbing.png) 8 8, move;
+}
+
+/* fix */
+/* line 62, ../scss/vendor/_owl-carousel.scss */
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+}
+
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.3.2
+*/
+/* line 77, ../scss/vendor/_owl-carousel.scss */
+.owl-theme .owl-controls {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Styling Next and Prev buttons */
+/* line 84, ../scss/vendor/_owl-carousel.scss */
+.owl-theme .owl-controls .owl-buttons div {
+  color: #FFF;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /*IE7 life-saver */
+  margin: 5px;
+  padding: 3px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  background: #869791;
+  filter: Alpha(Opacity=50);
+  /*IE7 fix*/
+  opacity: 0.5;
+}
+
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+/* line 101, ../scss/vendor/_owl-carousel.scss */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover {
+  filter: Alpha(Opacity=100);
+  /*IE7 fix*/
+  opacity: 1;
+  text-decoration: none;
+}
+
+/* Styling Pagination*/
+/* line 109, ../scss/vendor/_owl-carousel.scss */
+.owl-theme .owl-controls .owl-page {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /*IE7 life-saver */
+}
+
+/* line 114, ../scss/vendor/_owl-carousel.scss */
+.owl-theme .owl-controls .owl-page span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 5px 7px;
+  filter: Alpha(Opacity=50);
+  /*IE7 fix*/
+  opacity: 0.5;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: #869791;
+}
+
+/* line 127, ../scss/vendor/_owl-carousel.scss */
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+  filter: Alpha(Opacity=100);
+  /*IE7 fix*/
+  opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+/* line 135, ../scss/vendor/_owl-carousel.scss */
+.owl-theme .owl-controls .owl-page span.owl-numbers {
+  height: auto;
+  width: auto;
+  color: #FFF;
+  padding: 2px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+/* preloading images */
+/* line 147, ../scss/vendor/_owl-carousel.scss */
+.owl-item.loading {
+  min-height: 150px;
+  background: url(AjaxLoader.gif) no-repeat center center;
+}
+
 /* line 300, ../bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-version {
   font-family: "/5.2.0/";
@@ -6195,7 +6382,7 @@ dialog[open] {
   }
 }
 /* line 91, ../bower_components/foundation/scss/foundation/components/_side-nav.scss */
-.side-nav {
+.side-nav, .index-side-nav, .index .side-nav, .article-index .side-nav, .article-index-side-nav {
   display: block;
   margin: 0;
   padding: 0.875rem 0;
@@ -6204,27 +6391,27 @@ dialog[open] {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 /* line 62, ../bower_components/foundation/scss/foundation/components/_side-nav.scss */
-.side-nav li {
+.side-nav li, .index-side-nav li, .index .side-nav li, .article-index .side-nav li, .article-index-side-nav li {
   margin: 0 0 0.4375rem 0;
   font-size: 0.875rem;
 }
 /* line 66, ../bower_components/foundation/scss/foundation/components/_side-nav.scss */
-.side-nav li a:not(.button) {
+.side-nav li a:not(.button), .index-side-nav li a:not(.button), .article-index-side-nav li a:not(.button) {
   display: block;
   color: #008cba;
 }
 /* line 69, ../bower_components/foundation/scss/foundation/components/_side-nav.scss */
-.side-nav li a:not(.button):hover, .side-nav li a:not(.button):focus {
+.side-nav li a:not(.button):hover, .index-side-nav li a:not(.button):hover, .article-index-side-nav li a:not(.button):hover, .side-nav li a:not(.button):focus, .index-side-nav li a:not(.button):focus, .article-index-side-nav li a:not(.button):focus {
   color: #1cc7ff;
 }
 /* line 73, ../bower_components/foundation/scss/foundation/components/_side-nav.scss */
-.side-nav li.active > a:first-child:not(.button) {
+.side-nav li.active > a:first-child:not(.button), .index-side-nav li.active > a:first-child:not(.button), .article-index-side-nav li.active > a:first-child:not(.button) {
   color: #1cc7ff;
   font-weight: normal;
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 /* line 79, ../bower_components/foundation/scss/foundation/components/_side-nav.scss */
-.side-nav li.divider {
+.side-nav li.divider, .index-side-nav li.divider, .article-index-side-nav li.divider {
   border-top: 1px solid;
   height: 0;
   padding: 0;
@@ -6975,7 +7162,7 @@ meta.foundation-mq-topbar {
   background: #333333;
 }
 /* line 112, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.contain-to-grid .top-bar {
+.contain-to-grid .top-bar, .contain-to-grid .navigation-top-bar {
   margin-bottom: 0;
 }
 
@@ -6995,19 +7182,19 @@ meta.foundation-mq-topbar {
   max-height: 100%;
 }
 /* line 129, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.fixed.expanded:not(.top-bar) .title-area {
+.fixed.expanded:not(.top-bar) .title-area, .fixed.expanded:not(.top-bar) .navigation-title-area {
   position: fixed;
   width: 100%;
   z-index: 99;
 }
 /* line 135, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.fixed.expanded:not(.top-bar) .top-bar-section {
+.fixed.expanded:not(.top-bar) .top-bar-section, .fixed.expanded:not(.top-bar) .navigation-top-bar-section {
   z-index: 98;
   margin-top: 45px;
 }
 
 /* line 142, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar {
+.top-bar, .navigation-top-bar, .navigation .top-bar {
   overflow: hidden;
   height: 45px;
   line-height: 45px;
@@ -7016,52 +7203,54 @@ meta.foundation-mq-topbar {
   margin-bottom: 0;
 }
 /* line 151, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar ul {
+.top-bar ul, .navigation-top-bar ul, .navigation .top-bar ul {
   margin-bottom: 0;
   list-style: none;
 }
 /* line 156, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar .row {
+.top-bar .row, .navigation-top-bar .row {
   max-width: none;
 }
 /* line 158, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar form,
-.top-bar input {
+.top-bar form, .navigation-top-bar form, .navigation .top-bar form,
+.top-bar input,
+.navigation-top-bar input,
+.navigation .top-bar input {
   margin-bottom: 0;
 }
 /* line 161, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar input {
+.top-bar input, .navigation-top-bar input, .navigation .top-bar input {
   height: auto;
   padding-top: .35rem;
   padding-bottom: .35rem;
   font-size: 0.75rem;
 }
 /* line 163, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar .button {
+.top-bar .button, .navigation-top-bar .button {
   padding-top: .45rem;
   padding-bottom: .35rem;
   margin-bottom: 0;
   font-size: 0.75rem;
 }
 /* line 174, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar .title-area {
+.top-bar .title-area, .navigation-top-bar .title-area, .top-bar .navigation-title-area, .navigation-top-bar .navigation-title-area {
   position: relative;
   margin: 0;
 }
 /* line 179, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar .name {
+.top-bar .name, .navigation-top-bar .name {
   height: 45px;
   margin: 0;
   font-size: 16px;
 }
 /* line 184, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar .name h1 {
+.top-bar .name h1, .navigation-top-bar .name h1 {
   line-height: 45px;
   font-size: 1.0625rem;
   margin: 0;
 }
 /* line 188, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar .name h1 a {
+.top-bar .name h1 a, .navigation-top-bar .name h1 a {
   font-weight: normal;
   color: white;
   width: 50%;
@@ -7069,13 +7258,13 @@ meta.foundation-mq-topbar {
   padding: 0 15px;
 }
 /* line 199, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar .toggle-topbar {
+.top-bar .toggle-topbar, .navigation-top-bar .toggle-topbar {
   position: absolute;
   right: 0;
   top: 0;
 }
 /* line 204, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar .toggle-topbar a {
+.top-bar .toggle-topbar a, .navigation-top-bar .toggle-topbar a {
   color: white;
   text-transform: uppercase;
   font-size: 0.8125rem;
@@ -7087,14 +7276,14 @@ meta.foundation-mq-topbar {
   line-height: 45px;
 }
 /* line 217, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar .toggle-topbar.menu-icon {
+.top-bar .toggle-topbar.menu-icon, .navigation-top-bar .toggle-topbar.menu-icon {
   right: 15px;
   top: 50%;
   margin-top: -16px;
   padding-left: 40px;
 }
 /* line 223, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar .toggle-topbar.menu-icon a {
+.top-bar .toggle-topbar.menu-icon a, .navigation-top-bar .toggle-topbar.menu-icon a {
   height: 34px;
   line-height: 33px;
   padding: 0;
@@ -7103,7 +7292,7 @@ meta.foundation-mq-topbar {
   position: relative;
 }
 /* line 234, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar .toggle-topbar.menu-icon a::after {
+.top-bar .toggle-topbar.menu-icon a::after, .navigation-top-bar .toggle-topbar.menu-icon a::after {
   content: "";
   position: absolute;
   right: 0;
@@ -7115,26 +7304,26 @@ meta.foundation-mq-topbar {
   box-shadow: 0 10px 0 1px white, 0 16px 0 1px white, 0 22px 0 1px white;
 }
 /* line 257, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar.expanded {
+.top-bar.expanded, .expanded.navigation-top-bar {
   height: auto;
   background: transparent;
 }
 /* line 261, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar.expanded .title-area {
+.top-bar.expanded .title-area, .expanded.navigation-top-bar .title-area, .top-bar.expanded .navigation-title-area, .expanded.navigation-top-bar .navigation-title-area {
   background: #333333;
 }
 /* line 264, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar.expanded .toggle-topbar a {
+.top-bar.expanded .toggle-topbar a, .expanded.navigation-top-bar .toggle-topbar a {
   color: #888888;
 }
 /* line 265, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar.expanded .toggle-topbar a::after {
+.top-bar.expanded .toggle-topbar a::after, .expanded.navigation-top-bar .toggle-topbar a::after {
   -webkit-box-shadow: 1px 10px 1px 1px #888888, 1px 16px 1px 1px #888888, 1px 22px 1px 1px #888888;
   box-shadow: 0 10px 0 1px #888888, 0 16px 0 1px #888888, 0 22px 0 1px #888888;
 }
 
 /* line 285, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section {
+.top-bar-section, .navigation-top-bar-section, .navigation .top-bar-section {
   left: 0;
   position: relative;
   width: auto;
@@ -7143,7 +7332,7 @@ meta.foundation-mq-topbar {
   transition: left 300ms ease-out;
 }
 /* line 291, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section ul {
+.top-bar-section ul, .navigation-top-bar-section ul, .navigation .top-bar-section ul {
   width: 100%;
   height: auto;
   display: block;
@@ -7152,15 +7341,16 @@ meta.foundation-mq-topbar {
   margin: 0;
 }
 /* line 300, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section .divider,
-.top-bar-section [role="separator"] {
+.top-bar-section .divider, .navigation-top-bar-section .divider,
+.top-bar-section [role="separator"],
+.navigation-top-bar-section [role="separator"] {
   border-top: solid 1px #1a1a1a;
   clear: both;
   height: 1px;
   width: 100%;
 }
 /* line 309, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section ul li > a {
+.top-bar-section ul li > a, .navigation-top-bar-section ul li > a, .navigation .top-bar-section ul li > a {
   display: block;
   width: 100%;
   color: white;
@@ -7173,65 +7363,65 @@ meta.foundation-mq-topbar {
   background: #333333;
 }
 /* line 321, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section ul li > a.button {
+.top-bar-section ul li > a.button, .navigation-top-bar-section ul li > a.button {
   background: #008cba;
   font-size: 0.8125rem;
   padding-right: 15px;
   padding-left: 15px;
 }
 /* line 326, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section ul li > a.button:hover {
+.top-bar-section ul li > a.button:hover, .navigation-top-bar-section ul li > a.button:hover {
   background: #006688;
 }
 /* line 330, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section ul li > a.button.secondary {
+.top-bar-section ul li > a.button.secondary, .navigation-top-bar-section ul li > a.button.secondary {
   background: #e7e7e7;
 }
 /* line 332, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section ul li > a.button.secondary:hover {
+.top-bar-section ul li > a.button.secondary:hover, .navigation-top-bar-section ul li > a.button.secondary:hover {
   background: #cecece;
 }
 /* line 336, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section ul li > a.button.success {
+.top-bar-section ul li > a.button.success, .navigation-top-bar-section ul li > a.button.success {
   background: #43ac6a;
 }
 /* line 338, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section ul li > a.button.success:hover {
+.top-bar-section ul li > a.button.success:hover, .navigation-top-bar-section ul li > a.button.success:hover {
   background: #358854;
 }
 /* line 342, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section ul li > a.button.alert {
+.top-bar-section ul li > a.button.alert, .navigation-top-bar-section ul li > a.button.alert {
   background: #f04124;
 }
 /* line 344, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section ul li > a.button.alert:hover {
+.top-bar-section ul li > a.button.alert:hover, .navigation-top-bar-section ul li > a.button.alert:hover {
   background: #d42b0f;
 }
 /* line 352, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section ul li:hover:not(.has-form) > a {
+.top-bar-section ul li:hover:not(.has-form) > a, .navigation-top-bar-section ul li:hover:not(.has-form) > a {
   background: #272727;
   color: white;
 }
 /* line 359, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section ul li.active > a {
+.top-bar-section ul li.active > a, .navigation-top-bar-section ul li.active > a {
   background: #008cba;
   color: white;
 }
 /* line 362, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section ul li.active > a:hover {
+.top-bar-section ul li.active > a:hover, .navigation-top-bar-section ul li.active > a:hover {
   background: #0078a0;
   color: white;
 }
 /* line 370, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section .has-form {
+.top-bar-section .has-form, .navigation-top-bar-section .has-form {
   padding: 15px;
 }
 /* line 373, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section .has-dropdown {
+.top-bar-section .has-dropdown, .navigation-top-bar-section .has-dropdown {
   position: relative;
 }
 /* line 377, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section .has-dropdown > a:after {
+.top-bar-section .has-dropdown > a:after, .navigation-top-bar-section .has-dropdown > a:after {
   content: "";
   display: block;
   width: 0;
@@ -7246,11 +7436,11 @@ meta.foundation-mq-topbar {
   right: 0;
 }
 /* line 389, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section .has-dropdown.moved {
+.top-bar-section .has-dropdown.moved, .navigation-top-bar-section .has-dropdown.moved {
   position: static;
 }
 /* line 390, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section .has-dropdown.moved > .dropdown {
+.top-bar-section .has-dropdown.moved > .dropdown, .navigation-top-bar-section .has-dropdown.moved > .dropdown {
   display: block;
   position: static !important;
   height: auto;
@@ -7261,11 +7451,11 @@ meta.foundation-mq-topbar {
   width: 100%;
 }
 /* line 394, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section .has-dropdown.moved > a:after {
+.top-bar-section .has-dropdown.moved > a:after, .navigation-top-bar-section .has-dropdown.moved > a:after {
   display: none;
 }
 /* line 401, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section .dropdown {
+.top-bar-section .dropdown, .navigation-top-bar-section .dropdown {
   position: absolute;
   left: 100%;
   top: 0;
@@ -7278,39 +7468,39 @@ meta.foundation-mq-topbar {
   clip: rect(1px, 1px, 1px, 1px);
 }
 /* line 408, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section .dropdown li {
+.top-bar-section .dropdown li, .navigation-top-bar-section .dropdown li {
   width: 100%;
   height: auto;
 }
 /* line 412, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section .dropdown li a {
+.top-bar-section .dropdown li a, .navigation-top-bar-section .dropdown li a {
   font-weight: normal;
   padding: 8px 15px;
 }
 /* line 415, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section .dropdown li a.parent-link {
+.top-bar-section .dropdown li a.parent-link, .navigation-top-bar-section .dropdown li a.parent-link {
   font-weight: normal;
 }
 /* line 420, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section .dropdown li.title h5 {
+.top-bar-section .dropdown li.title h5, .navigation-top-bar-section .dropdown li.title h5 {
   margin-bottom: 0;
 }
 /* line 421, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section .dropdown li.title h5 a {
+.top-bar-section .dropdown li.title h5 a, .navigation-top-bar-section .dropdown li.title h5 a {
   color: white;
   line-height: 22.5px;
   display: block;
 }
 /* line 427, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section .dropdown li.has-form {
+.top-bar-section .dropdown li.has-form, .navigation-top-bar-section .dropdown li.has-form {
   padding: 8px 15px;
 }
 /* line 428, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section .dropdown li .button {
+.top-bar-section .dropdown li .button, .navigation-top-bar-section .dropdown li .button {
   top: auto;
 }
 /* line 431, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-.top-bar-section .dropdown label {
+.top-bar-section .dropdown label, .navigation-top-bar-section .dropdown label {
   padding: 8px 15px 2px;
   margin-bottom: 0;
   text-transform: uppercase;
@@ -7326,104 +7516,105 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width: 40.063em) {
   /* line 447, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .top-bar {
+  .top-bar, .navigation-top-bar, .navigation .top-bar {
     background: #333333;
     *zoom: 1;
     overflow: visible;
   }
   /* line 145, ../bower_components/foundation/scss/foundation/components/_global.scss */
-  .top-bar:before, .top-bar:after {
+  .top-bar:before, .navigation-top-bar:before, .navigation .top-bar:before, .top-bar:after, .navigation-top-bar:after, .navigation .top-bar:after {
     content: " ";
     display: table;
   }
   /* line 146, ../bower_components/foundation/scss/foundation/components/_global.scss */
-  .top-bar:after {
+  .top-bar:after, .navigation-top-bar:after, .navigation .top-bar:after {
     clear: both;
   }
   /* line 452, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .top-bar .toggle-topbar {
+  .top-bar .toggle-topbar, .navigation-top-bar .toggle-topbar {
     display: none;
   }
   /* line 454, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .top-bar .title-area {
+  .top-bar .title-area, .navigation-top-bar .title-area, .top-bar .navigation-title-area, .navigation-top-bar .navigation-title-area {
     float: left;
   }
   /* line 455, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .top-bar .name h1 a {
+  .top-bar .name h1 a, .navigation-top-bar .name h1 a {
     width: auto;
   }
   /* line 457, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .top-bar input,
-  .top-bar .button {
+  .top-bar input, .navigation-top-bar input, .navigation .top-bar input,
+  .top-bar .button,
+  .navigation-top-bar .button {
     font-size: 0.875rem;
     position: relative;
     top: 7px;
   }
   /* line 464, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .top-bar.expanded {
+  .top-bar.expanded, .expanded.navigation-top-bar {
     background: #333333;
   }
 
   /* line 467, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .contain-to-grid .top-bar {
+  .contain-to-grid .top-bar, .contain-to-grid .navigation-top-bar {
     max-width: 62.5rem;
     margin: 0 auto;
     margin-bottom: 0;
   }
 
   /* line 473, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .top-bar-section {
+  .top-bar-section, .navigation-top-bar-section, .navigation .top-bar-section {
     -webkit-transition: none 0 0;
     -moz-transition: none 0 0;
     transition: none 0 0;
     left: 0 !important;
   }
   /* line 477, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .top-bar-section ul {
+  .top-bar-section ul, .navigation-top-bar-section ul, .navigation .top-bar-section ul {
     width: auto;
     height: auto !important;
     display: inline;
   }
   /* line 482, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .top-bar-section ul li {
+  .top-bar-section ul li, .navigation-top-bar-section ul li, .navigation .top-bar-section ul li {
     float: left;
   }
   /* line 484, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .top-bar-section ul li .js-generated {
+  .top-bar-section ul li .js-generated, .navigation-top-bar-section ul li .js-generated {
     display: none;
   }
   /* line 490, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .top-bar-section li.hover > a:not(.button) {
+  .top-bar-section li.hover > a:not(.button), .navigation-top-bar-section li.hover > a:not(.button) {
     background: #272727;
     color: white;
   }
   /* line 496, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .top-bar-section li:not(.has-form) a:not(.button) {
+  .top-bar-section li:not(.has-form) a:not(.button), .navigation-top-bar-section li:not(.has-form) a:not(.button) {
     padding: 0 15px;
     line-height: 45px;
     background: #333333;
   }
   /* line 500, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .top-bar-section li:not(.has-form) a:not(.button):hover {
+  .top-bar-section li:not(.has-form) a:not(.button):hover, .navigation-top-bar-section li:not(.has-form) a:not(.button):hover {
     background: #272727;
   }
   /* line 504, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .top-bar-section li.active:not(.has-form) a:not(.button) {
+  .top-bar-section li.active:not(.has-form) a:not(.button), .navigation-top-bar-section li.active:not(.has-form) a:not(.button) {
     padding: 0 15px;
     line-height: 45px;
     color: white;
     background: #008cba;
   }
   /* line 509, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .top-bar-section li.active:not(.has-form) a:not(.button):hover {
+  .top-bar-section li.active:not(.has-form) a:not(.button):hover, .navigation-top-bar-section li.active:not(.has-form) a:not(.button):hover {
     background: #0078a0;
   }
   /* line 518, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .top-bar-section .has-dropdown > a {
+  .top-bar-section .has-dropdown > a, .navigation-top-bar-section .has-dropdown > a {
     padding-right: 35px !important;
   }
   /* line 520, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .top-bar-section .has-dropdown > a:after {
+  .top-bar-section .has-dropdown > a:after, .navigation-top-bar-section .has-dropdown > a:after {
     content: "";
     display: block;
     width: 0;
@@ -7435,11 +7626,11 @@ meta.foundation-mq-topbar {
     top: 22.5px;
   }
   /* line 529, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .top-bar-section .has-dropdown.moved {
+  .top-bar-section .has-dropdown.moved, .navigation-top-bar-section .has-dropdown.moved {
     position: relative;
   }
   /* line 530, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .top-bar-section .has-dropdown.moved > .dropdown {
+  .top-bar-section .has-dropdown.moved > .dropdown, .navigation-top-bar-section .has-dropdown.moved > .dropdown {
     display: block;
     position: absolute !important;
     height: 1px;
@@ -7448,7 +7639,7 @@ meta.foundation-mq-topbar {
     clip: rect(1px, 1px, 1px, 1px);
   }
   /* line 536, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .top-bar-section .has-dropdown.hover > .dropdown, .top-bar-section .has-dropdown.not-click:hover > .dropdown {
+  .top-bar-section .has-dropdown.hover > .dropdown, .navigation-top-bar-section .has-dropdown.hover > .dropdown, .top-bar-section .has-dropdown.not-click:hover > .dropdown, .navigation-top-bar-section .has-dropdown.not-click:hover > .dropdown {
     display: block;
     position: static !important;
     height: auto;
@@ -7458,7 +7649,7 @@ meta.foundation-mq-topbar {
     position: absolute !important;
   }
   /* line 543, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .top-bar-section .has-dropdown .dropdown li.has-dropdown > a:after {
+  .top-bar-section .has-dropdown .dropdown li.has-dropdown > a:after, .navigation-top-bar-section .has-dropdown .dropdown li.has-dropdown > a:after {
     border: none;
     content: "\00bb";
     top: 1rem;
@@ -7467,14 +7658,14 @@ meta.foundation-mq-topbar {
     line-height: 1.2;
   }
   /* line 556, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .top-bar-section .dropdown {
+  .top-bar-section .dropdown, .navigation-top-bar-section .dropdown {
     left: 0;
     top: auto;
     background: transparent;
     min-width: 100%;
   }
   /* line 563, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .top-bar-section .dropdown li a {
+  .top-bar-section .dropdown li a, .navigation-top-bar-section .dropdown li a {
     color: white;
     line-height: 1;
     white-space: nowrap;
@@ -7482,17 +7673,17 @@ meta.foundation-mq-topbar {
     background: #333333;
   }
   /* line 571, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .top-bar-section .dropdown li label {
+  .top-bar-section .dropdown li label, .navigation-top-bar-section .dropdown li label {
     white-space: nowrap;
     background: #333333;
   }
   /* line 577, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .top-bar-section .dropdown li .dropdown {
+  .top-bar-section .dropdown li .dropdown, .navigation-top-bar-section .dropdown li .dropdown {
     left: 100%;
     top: 0;
   }
   /* line 584, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
+  .top-bar-section > ul > .divider, .navigation-top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"], .navigation-top-bar-section > ul > [role="separator"] {
     border-bottom: none;
     border-top: none;
     border-right: solid 1px #4e4e4e;
@@ -7501,42 +7692,42 @@ meta.foundation-mq-topbar {
     width: 0;
   }
   /* line 594, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .top-bar-section .has-form {
+  .top-bar-section .has-form, .navigation-top-bar-section .has-form {
     background: #333333;
     padding: 0 15px;
     height: 45px;
   }
   /* line 602, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .top-bar-section .right li .dropdown {
+  .top-bar-section .right li .dropdown, .navigation-top-bar-section .right li .dropdown {
     left: auto;
     right: 0;
   }
   /* line 606, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .top-bar-section .right li .dropdown li .dropdown {
+  .top-bar-section .right li .dropdown li .dropdown, .navigation-top-bar-section .right li .dropdown li .dropdown {
     right: 100%;
   }
   /* line 610, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .top-bar-section .left li .dropdown {
+  .top-bar-section .left li .dropdown, .navigation-top-bar-section .left li .dropdown {
     right: auto;
     left: 0;
   }
   /* line 614, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .top-bar-section .left li .dropdown li .dropdown {
+  .top-bar-section .left li .dropdown li .dropdown, .navigation-top-bar-section .left li .dropdown li .dropdown {
     left: 100%;
   }
 
   /* line 624, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .no-js .top-bar-section ul li:hover > a {
+  .no-js .top-bar-section ul li:hover > a, .no-js .navigation-top-bar-section ul li:hover > a {
     background: #272727;
     color: white;
   }
   /* line 630, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .no-js .top-bar-section ul li:active > a {
+  .no-js .top-bar-section ul li:active > a, .no-js .navigation-top-bar-section ul li:active > a {
     background: #008cba;
     color: white;
   }
   /* line 638, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
-  .no-js .top-bar-section .has-dropdown:hover > .dropdown {
+  .no-js .top-bar-section .has-dropdown:hover > .dropdown, .no-js .navigation-top-bar-section .has-dropdown:hover > .dropdown {
     display: block;
     position: static !important;
     height: auto;
@@ -9398,899 +9589,6 @@ th.hide-for-touch {
   display: table-cell !important;
 }
 
-/*!
-Theme Name: Timothy oice
-Theme URI: www.timothyvoice.com/timothyvoice
-Description: Theme for Timothy Voice's Portfolio
-Author: Timothy Voice
-Author URI: www.timothyvoice.com
-Version: 1.0
-Tags: portfolio, clean, typography, simple
-*/
-/* Table of Contents
-* ============================= 
-*	0 Global
-*	1 Zurb Foundation Imports
-*	2 Variables
-*	3 Navigation
-*	4 UI
-*	5 Structure
-*	6 Content
-*	7 Typography
-*	8 Media Queries
-* =============================  
-*/
-/* ============================ 
-0 Global
-============================ */
-/* line 32, ../scss/style.scss */
-* {
-  font-family: 'ariel';
-}
-
-/* line 40, ../scss/style.scss */
-.alpha {
-  padding-left: 0px !important;
-}
-
-/* line 44, ../scss/style.scss */
-.beta {
-  padding-right: 0px !important;
-}
-
-/* ============================ 
-1 Zurb Foundation Imports 
-============================ */
-/* line 141, ../bower_components/foundation/scss/foundation/components/_type.scss */
-.text-left {
-  text-align: left !important;
-}
-
-/* line 141, ../bower_components/foundation/scss/foundation/components/_type.scss */
-.text-right {
-  text-align: right !important;
-}
-
-/* line 141, ../bower_components/foundation/scss/foundation/components/_type.scss */
-.text-center {
-  text-align: center !important;
-}
-
-/* line 141, ../bower_components/foundation/scss/foundation/components/_type.scss */
-.text-justify {
-  text-align: justify !important;
-}
-
-@media only screen and (max-width: 40em) {
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .small-only-text-left {
-    text-align: left !important;
-  }
-
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .small-only-text-right {
-    text-align: right !important;
-  }
-
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .small-only-text-center {
-    text-align: center !important;
-  }
-
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .small-only-text-justify {
-    text-align: justify !important;
-  }
-}
-@media only screen {
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .small-text-left {
-    text-align: left !important;
-  }
-
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .small-text-right {
-    text-align: right !important;
-  }
-
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .small-text-center {
-    text-align: center !important;
-  }
-
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .small-text-justify {
-    text-align: justify !important;
-  }
-}
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .medium-only-text-left {
-    text-align: left !important;
-  }
-
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .medium-only-text-right {
-    text-align: right !important;
-  }
-
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .medium-only-text-center {
-    text-align: center !important;
-  }
-
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .medium-only-text-justify {
-    text-align: justify !important;
-  }
-}
-@media only screen and (min-width: 40.063em) {
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .medium-text-left {
-    text-align: left !important;
-  }
-
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .medium-text-right {
-    text-align: right !important;
-  }
-
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .medium-text-center {
-    text-align: center !important;
-  }
-
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .medium-text-justify {
-    text-align: justify !important;
-  }
-}
-@media only screen and (min-width: 64.063em) and (max-width: 90em) {
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .large-only-text-left {
-    text-align: left !important;
-  }
-
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .large-only-text-right {
-    text-align: right !important;
-  }
-
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .large-only-text-center {
-    text-align: center !important;
-  }
-
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .large-only-text-justify {
-    text-align: justify !important;
-  }
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .large-text-left {
-    text-align: left !important;
-  }
-
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .large-text-right {
-    text-align: right !important;
-  }
-
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .large-text-center {
-    text-align: center !important;
-  }
-
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .large-text-justify {
-    text-align: justify !important;
-  }
-}
-@media only screen and (min-width: 90.063em) and (max-width: 120em) {
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .xlarge-only-text-left {
-    text-align: left !important;
-  }
-
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .xlarge-only-text-right {
-    text-align: right !important;
-  }
-
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .xlarge-only-text-center {
-    text-align: center !important;
-  }
-
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .xlarge-only-text-justify {
-    text-align: justify !important;
-  }
-}
-@media only screen and (min-width: 90.063em) {
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .xlarge-text-left {
-    text-align: left !important;
-  }
-
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .xlarge-text-right {
-    text-align: right !important;
-  }
-
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .xlarge-text-center {
-    text-align: center !important;
-  }
-
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .xlarge-text-justify {
-    text-align: justify !important;
-  }
-}
-@media only screen and (min-width: 120.063em) and (max-width: 99999999em) {
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .xxlarge-only-text-left {
-    text-align: left !important;
-  }
-
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .xxlarge-only-text-right {
-    text-align: right !important;
-  }
-
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .xxlarge-only-text-center {
-    text-align: center !important;
-  }
-
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .xxlarge-only-text-justify {
-    text-align: justify !important;
-  }
-}
-@media only screen and (min-width: 120.063em) {
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .xxlarge-text-left {
-    text-align: left !important;
-  }
-
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .xxlarge-text-right {
-    text-align: right !important;
-  }
-
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .xxlarge-text-center {
-    text-align: center !important;
-  }
-
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .xxlarge-text-justify {
-    text-align: justify !important;
-  }
-}
-/* line 141, ../bower_components/foundation/scss/foundation/components/_type.scss */
-.text-left {
-  text-align: left !important;
-}
-
-/* line 141, ../bower_components/foundation/scss/foundation/components/_type.scss */
-.text-right {
-  text-align: right !important;
-}
-
-/* line 141, ../bower_components/foundation/scss/foundation/components/_type.scss */
-.text-center {
-  text-align: center !important;
-}
-
-/* line 141, ../bower_components/foundation/scss/foundation/components/_type.scss */
-.text-justify {
-  text-align: justify !important;
-}
-
-@media only screen and (max-width: 40em) {
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .small-only-text-left {
-    text-align: left !important;
-  }
-
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .small-only-text-right {
-    text-align: right !important;
-  }
-
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .small-only-text-center {
-    text-align: center !important;
-  }
-
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .small-only-text-justify {
-    text-align: justify !important;
-  }
-}
-@media only screen {
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .small-text-left {
-    text-align: left !important;
-  }
-
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .small-text-right {
-    text-align: right !important;
-  }
-
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .small-text-center {
-    text-align: center !important;
-  }
-
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .small-text-justify {
-    text-align: justify !important;
-  }
-}
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .medium-only-text-left {
-    text-align: left !important;
-  }
-
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .medium-only-text-right {
-    text-align: right !important;
-  }
-
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .medium-only-text-center {
-    text-align: center !important;
-  }
-
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .medium-only-text-justify {
-    text-align: justify !important;
-  }
-}
-@media only screen and (min-width: 40.063em) {
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .medium-text-left {
-    text-align: left !important;
-  }
-
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .medium-text-right {
-    text-align: right !important;
-  }
-
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .medium-text-center {
-    text-align: center !important;
-  }
-
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .medium-text-justify {
-    text-align: justify !important;
-  }
-}
-@media only screen and (min-width: 64.063em) and (max-width: 90em) {
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .large-only-text-left {
-    text-align: left !important;
-  }
-
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .large-only-text-right {
-    text-align: right !important;
-  }
-
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .large-only-text-center {
-    text-align: center !important;
-  }
-
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .large-only-text-justify {
-    text-align: justify !important;
-  }
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .large-text-left {
-    text-align: left !important;
-  }
-
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .large-text-right {
-    text-align: right !important;
-  }
-
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .large-text-center {
-    text-align: center !important;
-  }
-
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .large-text-justify {
-    text-align: justify !important;
-  }
-}
-@media only screen and (min-width: 90.063em) and (max-width: 120em) {
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .xlarge-only-text-left {
-    text-align: left !important;
-  }
-
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .xlarge-only-text-right {
-    text-align: right !important;
-  }
-
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .xlarge-only-text-center {
-    text-align: center !important;
-  }
-
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .xlarge-only-text-justify {
-    text-align: justify !important;
-  }
-}
-@media only screen and (min-width: 90.063em) {
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .xlarge-text-left {
-    text-align: left !important;
-  }
-
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .xlarge-text-right {
-    text-align: right !important;
-  }
-
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .xlarge-text-center {
-    text-align: center !important;
-  }
-
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .xlarge-text-justify {
-    text-align: justify !important;
-  }
-}
-@media only screen and (min-width: 120.063em) and (max-width: 99999999em) {
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .xxlarge-only-text-left {
-    text-align: left !important;
-  }
-
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .xxlarge-only-text-right {
-    text-align: right !important;
-  }
-
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .xxlarge-only-text-center {
-    text-align: center !important;
-  }
-
-  /* line 149, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .xxlarge-only-text-justify {
-    text-align: justify !important;
-  }
-}
-@media only screen and (min-width: 120.063em) {
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .xxlarge-text-left {
-    text-align: left !important;
-  }
-
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .xxlarge-text-right {
-    text-align: right !important;
-  }
-
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .xxlarge-text-center {
-    text-align: center !important;
-  }
-
-  /* line 156, ../bower_components/foundation/scss/foundation/components/_type.scss */
-  .xxlarge-text-justify {
-    text-align: justify !important;
-  }
-}
-/* small displays */
-@media only screen {
-  /* line 195, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  .show-for-small-only, .show-for-small-up, .show-for-small, .show-for-small-down, .hide-for-medium-only, .hide-for-medium-up, .hide-for-medium, .show-for-medium-down, .hide-for-large-only, .hide-for-large-up, .hide-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xlarge, .show-for-xlarge-down, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .hide-for-xxlarge, .show-for-xxlarge-down {
-    display: inherit !important;
-  }
-
-  /* line 198, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  .hide-for-small-only, .hide-for-small-up, .hide-for-small, .hide-for-small-down, .show-for-medium-only, .show-for-medium-up, .show-for-medium, .hide-for-medium-down, .show-for-large-only, .show-for-large-up, .show-for-large, .hide-for-large-down, .show-for-xlarge-only, .show-for-xlarge-up, .show-for-xlarge, .hide-for-xlarge-down, .show-for-xxlarge-only, .show-for-xxlarge-up, .show-for-xxlarge, .hide-for-xxlarge-down {
-    display: none !important;
-  }
-
-  /* line 202, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  table.show-for-small-only, table.show-for-small-up, table.show-for-small, table.show-for-small-down, table.hide-for-medium-only, table.hide-for-medium-up, table.hide-for-medium, table.show-for-medium-down, table.hide-for-large-only, table.hide-for-large-up, table.hide-for-large, table.show-for-large-down, table.hide-for-xlarge-only, table.hide-for-xlarge-up, table.hide-for-xlarge, table.show-for-xlarge-down, table.hide-for-xxlarge-only, table.hide-for-xxlarge-up, table.hide-for-xxlarge, table.show-for-xxlarge-down {
-    display: table;
-  }
-
-  /* line 205, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  thead.show-for-small-only, thead.show-for-small-up, thead.show-for-small, thead.show-for-small-down, thead.hide-for-medium-only, thead.hide-for-medium-up, thead.hide-for-medium, thead.show-for-medium-down, thead.hide-for-large-only, thead.hide-for-large-up, thead.hide-for-large, thead.show-for-large-down, thead.hide-for-xlarge-only, thead.hide-for-xlarge-up, thead.hide-for-xlarge, thead.show-for-xlarge-down, thead.hide-for-xxlarge-only, thead.hide-for-xxlarge-up, thead.hide-for-xxlarge, thead.show-for-xxlarge-down {
-    display: table-header-group !important;
-  }
-
-  /* line 208, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  tbody.show-for-small-only, tbody.show-for-small-up, tbody.show-for-small, tbody.show-for-small-down, tbody.hide-for-medium-only, tbody.hide-for-medium-up, tbody.hide-for-medium, tbody.show-for-medium-down, tbody.hide-for-large-only, tbody.hide-for-large-up, tbody.hide-for-large, tbody.show-for-large-down, tbody.hide-for-xlarge-only, tbody.hide-for-xlarge-up, tbody.hide-for-xlarge, tbody.show-for-xlarge-down, tbody.hide-for-xxlarge-only, tbody.hide-for-xxlarge-up, tbody.hide-for-xxlarge, tbody.show-for-xxlarge-down {
-    display: table-row-group !important;
-  }
-
-  /* line 211, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  tr.show-for-small-only, tr.show-for-small-up, tr.show-for-small, tr.show-for-small-down, tr.hide-for-medium-only, tr.hide-for-medium-up, tr.hide-for-medium, tr.show-for-medium-down, tr.hide-for-large-only, tr.hide-for-large-up, tr.hide-for-large, tr.show-for-large-down, tr.hide-for-xlarge-only, tr.hide-for-xlarge-up, tr.hide-for-xlarge, tr.show-for-xlarge-down, tr.hide-for-xxlarge-only, tr.hide-for-xxlarge-up, tr.hide-for-xxlarge, tr.show-for-xxlarge-down {
-    display: table-row !important;
-  }
-
-  /* line 214, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  th.show-for-small-only, td.show-for-small-only, th.show-for-small-up, td.show-for-small-up, th.show-for-small, td.show-for-small, th.show-for-small-down, td.show-for-small-down, th.hide-for-medium-only, td.hide-for-medium-only, th.hide-for-medium-up, td.hide-for-medium-up, th.hide-for-medium, td.hide-for-medium, th.show-for-medium-down, td.show-for-medium-down, th.hide-for-large-only, td.hide-for-large-only, th.hide-for-large-up, td.hide-for-large-up, th.hide-for-large, td.hide-for-large, th.show-for-large-down, td.show-for-large-down, th.hide-for-xlarge-only, td.hide-for-xlarge-only, th.hide-for-xlarge-up, td.hide-for-xlarge-up, th.hide-for-xlarge, td.hide-for-xlarge, th.show-for-xlarge-down, td.show-for-xlarge-down, th.hide-for-xxlarge-only, td.hide-for-xxlarge-only, th.hide-for-xxlarge-up, td.hide-for-xxlarge-up, th.hide-for-xxlarge, td.hide-for-xxlarge, th.show-for-xxlarge-down, td.show-for-xxlarge-down {
-    display: table-cell !important;
-  }
-}
-/* medium displays */
-@media only screen and (min-width: 40.063em) {
-  /* line 195, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  .hide-for-small-only, .show-for-small-up, .hide-for-small, .hide-for-small-down, .show-for-medium-only, .show-for-medium-up, .show-for-medium, .show-for-medium-down, .hide-for-large-only, .hide-for-large-up, .hide-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xlarge, .show-for-xlarge-down, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .hide-for-xxlarge, .show-for-xxlarge-down {
-    display: inherit !important;
-  }
-
-  /* line 198, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  .show-for-small-only, .hide-for-small-up, .show-for-small, .show-for-small-down, .hide-for-medium-only, .hide-for-medium-up, .hide-for-medium, .hide-for-medium-down, .show-for-large-only, .show-for-large-up, .show-for-large, .hide-for-large-down, .show-for-xlarge-only, .show-for-xlarge-up, .show-for-xlarge, .hide-for-xlarge-down, .show-for-xxlarge-only, .show-for-xxlarge-up, .show-for-xxlarge, .hide-for-xxlarge-down {
-    display: none !important;
-  }
-
-  /* line 202, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  table.hide-for-small-only, table.show-for-small-up, table.hide-for-small, table.hide-for-small-down, table.show-for-medium-only, table.show-for-medium-up, table.show-for-medium, table.show-for-medium-down, table.hide-for-large-only, table.hide-for-large-up, table.hide-for-large, table.show-for-large-down, table.hide-for-xlarge-only, table.hide-for-xlarge-up, table.hide-for-xlarge, table.show-for-xlarge-down, table.hide-for-xxlarge-only, table.hide-for-xxlarge-up, table.hide-for-xxlarge, table.show-for-xxlarge-down {
-    display: table;
-  }
-
-  /* line 205, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  thead.hide-for-small-only, thead.show-for-small-up, thead.hide-for-small, thead.hide-for-small-down, thead.show-for-medium-only, thead.show-for-medium-up, thead.show-for-medium, thead.show-for-medium-down, thead.hide-for-large-only, thead.hide-for-large-up, thead.hide-for-large, thead.show-for-large-down, thead.hide-for-xlarge-only, thead.hide-for-xlarge-up, thead.hide-for-xlarge, thead.show-for-xlarge-down, thead.hide-for-xxlarge-only, thead.hide-for-xxlarge-up, thead.hide-for-xxlarge, thead.show-for-xxlarge-down {
-    display: table-header-group !important;
-  }
-
-  /* line 208, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  tbody.hide-for-small-only, tbody.show-for-small-up, tbody.hide-for-small, tbody.hide-for-small-down, tbody.show-for-medium-only, tbody.show-for-medium-up, tbody.show-for-medium, tbody.show-for-medium-down, tbody.hide-for-large-only, tbody.hide-for-large-up, tbody.hide-for-large, tbody.show-for-large-down, tbody.hide-for-xlarge-only, tbody.hide-for-xlarge-up, tbody.hide-for-xlarge, tbody.show-for-xlarge-down, tbody.hide-for-xxlarge-only, tbody.hide-for-xxlarge-up, tbody.hide-for-xxlarge, tbody.show-for-xxlarge-down {
-    display: table-row-group !important;
-  }
-
-  /* line 211, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  tr.hide-for-small-only, tr.show-for-small-up, tr.hide-for-small, tr.hide-for-small-down, tr.show-for-medium-only, tr.show-for-medium-up, tr.show-for-medium, tr.show-for-medium-down, tr.hide-for-large-only, tr.hide-for-large-up, tr.hide-for-large, tr.show-for-large-down, tr.hide-for-xlarge-only, tr.hide-for-xlarge-up, tr.hide-for-xlarge, tr.show-for-xlarge-down, tr.hide-for-xxlarge-only, tr.hide-for-xxlarge-up, tr.hide-for-xxlarge, tr.show-for-xxlarge-down {
-    display: table-row !important;
-  }
-
-  /* line 214, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  th.hide-for-small-only, td.hide-for-small-only, th.show-for-small-up, td.show-for-small-up, th.hide-for-small, td.hide-for-small, th.hide-for-small-down, td.hide-for-small-down, th.show-for-medium-only, td.show-for-medium-only, th.show-for-medium-up, td.show-for-medium-up, th.show-for-medium, td.show-for-medium, th.show-for-medium-down, td.show-for-medium-down, th.hide-for-large-only, td.hide-for-large-only, th.hide-for-large-up, td.hide-for-large-up, th.hide-for-large, td.hide-for-large, th.show-for-large-down, td.show-for-large-down, th.hide-for-xlarge-only, td.hide-for-xlarge-only, th.hide-for-xlarge-up, td.hide-for-xlarge-up, th.hide-for-xlarge, td.hide-for-xlarge, th.show-for-xlarge-down, td.show-for-xlarge-down, th.hide-for-xxlarge-only, td.hide-for-xxlarge-only, th.hide-for-xxlarge-up, td.hide-for-xxlarge-up, th.hide-for-xxlarge, td.hide-for-xxlarge, th.show-for-xxlarge-down, td.show-for-xxlarge-down {
-    display: table-cell !important;
-  }
-}
-/* large displays */
-@media only screen and (min-width: 64.063em) {
-  /* line 195, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  .hide-for-small-only, .show-for-small-up, .hide-for-small, .hide-for-small-down, .hide-for-medium-only, .show-for-medium-up, .hide-for-medium, .hide-for-medium-down, .show-for-large-only, .show-for-large-up, .show-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xlarge, .show-for-xlarge-down, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .hide-for-xxlarge, .show-for-xxlarge-down {
-    display: inherit !important;
-  }
-
-  /* line 198, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  .show-for-small-only, .hide-for-small-up, .show-for-small, .show-for-small-down, .show-for-medium-only, .hide-for-medium-up, .show-for-medium, .show-for-medium-down, .hide-for-large-only, .hide-for-large-up, .hide-for-large, .hide-for-large-down, .show-for-xlarge-only, .show-for-xlarge-up, .show-for-xlarge, .hide-for-xlarge-down, .show-for-xxlarge-only, .show-for-xxlarge-up, .show-for-xxlarge, .hide-for-xxlarge-down {
-    display: none !important;
-  }
-
-  /* line 202, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  table.hide-for-small-only, table.show-for-small-up, table.hide-for-small, table.hide-for-small-down, table.hide-for-medium-only, table.show-for-medium-up, table.hide-for-medium, table.hide-for-medium-down, table.show-for-large-only, table.show-for-large-up, table.show-for-large, table.show-for-large-down, table.hide-for-xlarge-only, table.hide-for-xlarge-up, table.hide-for-xlarge, table.show-for-xlarge-down, table.hide-for-xxlarge-only, table.hide-for-xxlarge-up, table.hide-for-xxlarge, table.show-for-xxlarge-down {
-    display: table;
-  }
-
-  /* line 205, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  thead.hide-for-small-only, thead.show-for-small-up, thead.hide-for-small, thead.hide-for-small-down, thead.hide-for-medium-only, thead.show-for-medium-up, thead.hide-for-medium, thead.hide-for-medium-down, thead.show-for-large-only, thead.show-for-large-up, thead.show-for-large, thead.show-for-large-down, thead.hide-for-xlarge-only, thead.hide-for-xlarge-up, thead.hide-for-xlarge, thead.show-for-xlarge-down, thead.hide-for-xxlarge-only, thead.hide-for-xxlarge-up, thead.hide-for-xxlarge, thead.show-for-xxlarge-down {
-    display: table-header-group !important;
-  }
-
-  /* line 208, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  tbody.hide-for-small-only, tbody.show-for-small-up, tbody.hide-for-small, tbody.hide-for-small-down, tbody.hide-for-medium-only, tbody.show-for-medium-up, tbody.hide-for-medium, tbody.hide-for-medium-down, tbody.show-for-large-only, tbody.show-for-large-up, tbody.show-for-large, tbody.show-for-large-down, tbody.hide-for-xlarge-only, tbody.hide-for-xlarge-up, tbody.hide-for-xlarge, tbody.show-for-xlarge-down, tbody.hide-for-xxlarge-only, tbody.hide-for-xxlarge-up, tbody.hide-for-xxlarge, tbody.show-for-xxlarge-down {
-    display: table-row-group !important;
-  }
-
-  /* line 211, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  tr.hide-for-small-only, tr.show-for-small-up, tr.hide-for-small, tr.hide-for-small-down, tr.hide-for-medium-only, tr.show-for-medium-up, tr.hide-for-medium, tr.hide-for-medium-down, tr.show-for-large-only, tr.show-for-large-up, tr.show-for-large, tr.show-for-large-down, tr.hide-for-xlarge-only, tr.hide-for-xlarge-up, tr.hide-for-xlarge, tr.show-for-xlarge-down, tr.hide-for-xxlarge-only, tr.hide-for-xxlarge-up, tr.hide-for-xxlarge, tr.show-for-xxlarge-down {
-    display: table-row !important;
-  }
-
-  /* line 214, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  th.hide-for-small-only, td.hide-for-small-only, th.show-for-small-up, td.show-for-small-up, th.hide-for-small, td.hide-for-small, th.hide-for-small-down, td.hide-for-small-down, th.hide-for-medium-only, td.hide-for-medium-only, th.show-for-medium-up, td.show-for-medium-up, th.hide-for-medium, td.hide-for-medium, th.hide-for-medium-down, td.hide-for-medium-down, th.show-for-large-only, td.show-for-large-only, th.show-for-large-up, td.show-for-large-up, th.show-for-large, td.show-for-large, th.show-for-large-down, td.show-for-large-down, th.hide-for-xlarge-only, td.hide-for-xlarge-only, th.hide-for-xlarge-up, td.hide-for-xlarge-up, th.hide-for-xlarge, td.hide-for-xlarge, th.show-for-xlarge-down, td.show-for-xlarge-down, th.hide-for-xxlarge-only, td.hide-for-xxlarge-only, th.hide-for-xxlarge-up, td.hide-for-xxlarge-up, th.hide-for-xxlarge, td.hide-for-xxlarge, th.show-for-xxlarge-down, td.show-for-xxlarge-down {
-    display: table-cell !important;
-  }
-}
-/* xlarge displays */
-@media only screen and (min-width: 90.063em) {
-  /* line 195, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  .hide-for-small-only, .show-for-small-up, .hide-for-small, .hide-for-small-down, .hide-for-medium-only, .show-for-medium-up, .hide-for-medium, .hide-for-medium-down, .hide-for-large-only, .show-for-large-up, .hide-for-large, .hide-for-large-down, .show-for-xlarge-only, .show-for-xlarge-up, .show-for-xlarge, .show-for-xlarge-down, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .hide-for-xxlarge, .show-for-xxlarge-down {
-    display: inherit !important;
-  }
-
-  /* line 198, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  .show-for-small-only, .hide-for-small-up, .show-for-small, .show-for-small-down, .show-for-medium-only, .hide-for-medium-up, .show-for-medium, .show-for-medium-down, .show-for-large-only, .hide-for-large-up, .show-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xlarge, .hide-for-xlarge-down, .show-for-xxlarge-only, .show-for-xxlarge-up, .show-for-xxlarge, .hide-for-xxlarge-down {
-    display: none !important;
-  }
-
-  /* line 202, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  table.hide-for-small-only, table.show-for-small-up, table.hide-for-small, table.hide-for-small-down, table.hide-for-medium-only, table.show-for-medium-up, table.hide-for-medium, table.hide-for-medium-down, table.hide-for-large-only, table.show-for-large-up, table.hide-for-large, table.hide-for-large-down, table.show-for-xlarge-only, table.show-for-xlarge-up, table.show-for-xlarge, table.show-for-xlarge-down, table.hide-for-xxlarge-only, table.hide-for-xxlarge-up, table.hide-for-xxlarge, table.show-for-xxlarge-down {
-    display: table;
-  }
-
-  /* line 205, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  thead.hide-for-small-only, thead.show-for-small-up, thead.hide-for-small, thead.hide-for-small-down, thead.hide-for-medium-only, thead.show-for-medium-up, thead.hide-for-medium, thead.hide-for-medium-down, thead.hide-for-large-only, thead.show-for-large-up, thead.hide-for-large, thead.hide-for-large-down, thead.show-for-xlarge-only, thead.show-for-xlarge-up, thead.show-for-xlarge, thead.show-for-xlarge-down, thead.hide-for-xxlarge-only, thead.hide-for-xxlarge-up, thead.hide-for-xxlarge, thead.show-for-xxlarge-down {
-    display: table-header-group !important;
-  }
-
-  /* line 208, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  tbody.hide-for-small-only, tbody.show-for-small-up, tbody.hide-for-small, tbody.hide-for-small-down, tbody.hide-for-medium-only, tbody.show-for-medium-up, tbody.hide-for-medium, tbody.hide-for-medium-down, tbody.hide-for-large-only, tbody.show-for-large-up, tbody.hide-for-large, tbody.hide-for-large-down, tbody.show-for-xlarge-only, tbody.show-for-xlarge-up, tbody.show-for-xlarge, tbody.show-for-xlarge-down, tbody.hide-for-xxlarge-only, tbody.hide-for-xxlarge-up, tbody.hide-for-xxlarge, tbody.show-for-xxlarge-down {
-    display: table-row-group !important;
-  }
-
-  /* line 211, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  tr.hide-for-small-only, tr.show-for-small-up, tr.hide-for-small, tr.hide-for-small-down, tr.hide-for-medium-only, tr.show-for-medium-up, tr.hide-for-medium, tr.hide-for-medium-down, tr.hide-for-large-only, tr.show-for-large-up, tr.hide-for-large, tr.hide-for-large-down, tr.show-for-xlarge-only, tr.show-for-xlarge-up, tr.show-for-xlarge, tr.show-for-xlarge-down, tr.hide-for-xxlarge-only, tr.hide-for-xxlarge-up, tr.hide-for-xxlarge, tr.show-for-xxlarge-down {
-    display: table-row !important;
-  }
-
-  /* line 214, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  th.hide-for-small-only, td.hide-for-small-only, th.show-for-small-up, td.show-for-small-up, th.hide-for-small, td.hide-for-small, th.hide-for-small-down, td.hide-for-small-down, th.hide-for-medium-only, td.hide-for-medium-only, th.show-for-medium-up, td.show-for-medium-up, th.hide-for-medium, td.hide-for-medium, th.hide-for-medium-down, td.hide-for-medium-down, th.hide-for-large-only, td.hide-for-large-only, th.show-for-large-up, td.show-for-large-up, th.hide-for-large, td.hide-for-large, th.hide-for-large-down, td.hide-for-large-down, th.show-for-xlarge-only, td.show-for-xlarge-only, th.show-for-xlarge-up, td.show-for-xlarge-up, th.show-for-xlarge, td.show-for-xlarge, th.show-for-xlarge-down, td.show-for-xlarge-down, th.hide-for-xxlarge-only, td.hide-for-xxlarge-only, th.hide-for-xxlarge-up, td.hide-for-xxlarge-up, th.hide-for-xxlarge, td.hide-for-xxlarge, th.show-for-xxlarge-down, td.show-for-xxlarge-down {
-    display: table-cell !important;
-  }
-}
-/* xxlarge displays */
-@media only screen and (min-width: 120.063em) {
-  /* line 195, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  .hide-for-small-only, .show-for-small-up, .hide-for-small, .hide-for-small-down, .hide-for-medium-only, .show-for-medium-up, .hide-for-medium, .hide-for-medium-down, .hide-for-large-only, .show-for-large-up, .hide-for-large, .hide-for-large-down, .hide-for-xlarge-only, .show-for-xlarge-up, .hide-for-xlarge, .hide-for-xlarge-down, .show-for-xxlarge-only, .show-for-xxlarge-up, .show-for-xxlarge, .show-for-xxlarge-down {
-    display: inherit !important;
-  }
-
-  /* line 198, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  .show-for-small-only, .hide-for-small-up, .show-for-small, .show-for-small-down, .show-for-medium-only, .hide-for-medium-up, .show-for-medium, .show-for-medium-down, .show-for-large-only, .hide-for-large-up, .show-for-large, .show-for-large-down, .show-for-xlarge-only, .hide-for-xlarge-up, .show-for-xlarge, .show-for-xlarge-down, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .hide-for-xxlarge, .hide-for-xxlarge-down {
-    display: none !important;
-  }
-
-  /* line 202, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  table.hide-for-small-only, table.show-for-small-up, table.hide-for-small, table.hide-for-small-down, table.hide-for-medium-only, table.show-for-medium-up, table.hide-for-medium, table.hide-for-medium-down, table.hide-for-large-only, table.show-for-large-up, table.hide-for-large, table.hide-for-large-down, table.hide-for-xlarge-only, table.show-for-xlarge-up, table.hide-for-xlarge, table.hide-for-xlarge-down, table.show-for-xxlarge-only, table.show-for-xxlarge-up, table.show-for-xxlarge, table.show-for-xxlarge-down {
-    display: table;
-  }
-
-  /* line 205, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  thead.hide-for-small-only, thead.show-for-small-up, thead.hide-for-small, thead.hide-for-small-down, thead.hide-for-medium-only, thead.show-for-medium-up, thead.hide-for-medium, thead.hide-for-medium-down, thead.hide-for-large-only, thead.show-for-large-up, thead.hide-for-large, thead.hide-for-large-down, thead.hide-for-xlarge-only, thead.show-for-xlarge-up, thead.hide-for-xlarge, thead.hide-for-xlarge-down, thead.show-for-xxlarge-only, thead.show-for-xxlarge-up, thead.show-for-xxlarge, thead.show-for-xxlarge-down {
-    display: table-header-group !important;
-  }
-
-  /* line 208, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  tbody.hide-for-small-only, tbody.show-for-small-up, tbody.hide-for-small, tbody.hide-for-small-down, tbody.hide-for-medium-only, tbody.show-for-medium-up, tbody.hide-for-medium, tbody.hide-for-medium-down, tbody.hide-for-large-only, tbody.show-for-large-up, tbody.hide-for-large, tbody.hide-for-large-down, tbody.hide-for-xlarge-only, tbody.show-for-xlarge-up, tbody.hide-for-xlarge, tbody.hide-for-xlarge-down, tbody.show-for-xxlarge-only, tbody.show-for-xxlarge-up, tbody.show-for-xxlarge, tbody.show-for-xxlarge-down {
-    display: table-row-group !important;
-  }
-
-  /* line 211, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  tr.hide-for-small-only, tr.show-for-small-up, tr.hide-for-small, tr.hide-for-small-down, tr.hide-for-medium-only, tr.show-for-medium-up, tr.hide-for-medium, tr.hide-for-medium-down, tr.hide-for-large-only, tr.show-for-large-up, tr.hide-for-large, tr.hide-for-large-down, tr.hide-for-xlarge-only, tr.show-for-xlarge-up, tr.hide-for-xlarge, tr.hide-for-xlarge-down, tr.show-for-xxlarge-only, tr.show-for-xxlarge-up, tr.show-for-xxlarge, tr.show-for-xxlarge-down {
-    display: table-row !important;
-  }
-
-  /* line 214, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  th.hide-for-small-only, td.hide-for-small-only, th.show-for-small-up, td.show-for-small-up, th.hide-for-small, td.hide-for-small, th.hide-for-small-down, td.hide-for-small-down, th.hide-for-medium-only, td.hide-for-medium-only, th.show-for-medium-up, td.show-for-medium-up, th.hide-for-medium, td.hide-for-medium, th.hide-for-medium-down, td.hide-for-medium-down, th.hide-for-large-only, td.hide-for-large-only, th.show-for-large-up, td.show-for-large-up, th.hide-for-large, td.hide-for-large, th.hide-for-large-down, td.hide-for-large-down, th.hide-for-xlarge-only, td.hide-for-xlarge-only, th.show-for-xlarge-up, td.show-for-xlarge-up, th.hide-for-xlarge, td.hide-for-xlarge, th.hide-for-xlarge-down, td.hide-for-xlarge-down, th.show-for-xxlarge-only, td.show-for-xxlarge-only, th.show-for-xxlarge-up, td.show-for-xxlarge-up, th.show-for-xxlarge, td.show-for-xxlarge, th.show-for-xxlarge-down, td.show-for-xxlarge-down {
-    display: table-cell !important;
-  }
-}
-/* Orientation targeting */
-/* line 228, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-.show-for-landscape,
-.hide-for-portrait {
-  display: inherit !important;
-}
-
-/* line 230, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-.hide-for-landscape,
-.show-for-portrait {
-  display: none !important;
-}
-
-/* Specific visibility for tables */
-/* line 235, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-table.hide-for-landscape, table.show-for-portrait {
-  display: table;
-}
-
-/* line 239, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-thead.hide-for-landscape, thead.show-for-portrait {
-  display: table-header-group !important;
-}
-
-/* line 243, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-tbody.hide-for-landscape, tbody.show-for-portrait {
-  display: table-row-group !important;
-}
-
-/* line 247, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-tr.hide-for-landscape, tr.show-for-portrait {
-  display: table-row !important;
-}
-
-/* line 252, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-td.hide-for-landscape, td.show-for-portrait,
-th.hide-for-landscape,
-th.show-for-portrait {
-  display: table-cell !important;
-}
-
-@media only screen and (orientation: landscape) {
-  /* line 257, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  .show-for-landscape,
-  .hide-for-portrait {
-    display: inherit !important;
-  }
-
-  /* line 259, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  .hide-for-landscape,
-  .show-for-portrait {
-    display: none !important;
-  }
-
-  /* Specific visibility for tables */
-  /* line 264, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  table.show-for-landscape, table.hide-for-portrait {
-    display: table;
-  }
-
-  /* line 268, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  thead.show-for-landscape, thead.hide-for-portrait {
-    display: table-header-group !important;
-  }
-
-  /* line 272, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  tbody.show-for-landscape, tbody.hide-for-portrait {
-    display: table-row-group !important;
-  }
-
-  /* line 276, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  tr.show-for-landscape, tr.hide-for-portrait {
-    display: table-row !important;
-  }
-
-  /* line 281, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  td.show-for-landscape, td.hide-for-portrait,
-  th.show-for-landscape,
-  th.hide-for-portrait {
-    display: table-cell !important;
-  }
-}
-@media only screen and (orientation: portrait) {
-  /* line 287, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  .show-for-portrait,
-  .hide-for-landscape {
-    display: inherit !important;
-  }
-
-  /* line 289, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  .hide-for-portrait,
-  .show-for-landscape {
-    display: none !important;
-  }
-
-  /* Specific visibility for tables */
-  /* line 294, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  table.show-for-portrait, table.hide-for-landscape {
-    display: table;
-  }
-
-  /* line 298, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  thead.show-for-portrait, thead.hide-for-landscape {
-    display: table-header-group !important;
-  }
-
-  /* line 302, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  tbody.show-for-portrait, tbody.hide-for-landscape {
-    display: table-row-group !important;
-  }
-
-  /* line 306, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  tr.show-for-portrait, tr.hide-for-landscape {
-    display: table-row !important;
-  }
-
-  /* line 311, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-  td.show-for-portrait, td.hide-for-landscape,
-  th.show-for-portrait,
-  th.hide-for-landscape {
-    display: table-cell !important;
-  }
-}
-/* Touch-enabled device targeting */
-/* line 317, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-.show-for-touch {
-  display: none !important;
-}
-
-/* line 318, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-.hide-for-touch {
-  display: inherit !important;
-}
-
-/* line 319, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-.touch .show-for-touch {
-  display: inherit !important;
-}
-
-/* line 320, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-.touch .hide-for-touch {
-  display: none !important;
-}
-
-/* Specific visibility for tables */
-/* line 323, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-table.hide-for-touch {
-  display: table;
-}
-
-/* line 324, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-.touch table.show-for-touch {
-  display: table;
-}
-
-/* line 325, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-thead.hide-for-touch {
-  display: table-header-group !important;
-}
-
-/* line 326, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-.touch thead.show-for-touch {
-  display: table-header-group !important;
-}
-
-/* line 327, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-tbody.hide-for-touch {
-  display: table-row-group !important;
-}
-
-/* line 328, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-.touch tbody.show-for-touch {
-  display: table-row-group !important;
-}
-
-/* line 329, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-tr.hide-for-touch {
-  display: table-row !important;
-}
-
-/* line 330, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-.touch tr.show-for-touch {
-  display: table-row !important;
-}
-
-/* line 331, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-td.hide-for-touch {
-  display: table-cell !important;
-}
-
-/* line 332, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-.touch td.show-for-touch {
-  display: table-cell !important;
-}
-
-/* line 333, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-th.hide-for-touch {
-  display: table-cell !important;
-}
-
-/* line 334, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
-.touch th.show-for-touch {
-  display: table-cell !important;
-}
-
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -10726,18 +10024,146 @@ th {
 }
 
 /* ============================ 
-2 Variables 
+	Colors
 ============================ */
 /* ============================ 
-3 Navigation
+	Typography
 ============================ */
-/* line 87, ../scss/style.scss */
-.top-bar {
+/* ============================ 
+	Borders
+============================ */
+/* ============================ 
+	Backgrounds
+============================ */
+/* line 1, ../scss/partials/_grid.scss */
+.alpha {
+  padding-left: 0px !important;
+}
+
+/* line 5, ../scss/partials/_grid.scss */
+.beta {
+  padding-right: 0px !important;
+}
+
+/* line 9, ../scss/partials/_grid.scss */
+hr.section {
+  margin: 2rem 0rem 1rem 0rem;
+}
+
+/* line 3, ../scss/partials/_typography.scss */
+body, h1, h2, h3, h4, h5, h6, p, a {
+  font-family: "franklin-gothic-urw", Helvetica, Arial, sans-serif;
+}
+
+/* line 7, ../scss/partials/_typography.scss */
+h3 {
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* line 12, ../scss/partials/_typography.scss */
+p a {
+  color: #001742;
+  text-decoration: underline;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* line 18, ../scss/partials/_typography.scss */
+header h4 {
+  color: black;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding-top: 0rem;
+  font-weight: 400;
+}
+
+/* line 26, ../scss/partials/_typography.scss */
+p.small {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 200;
+}
+
+/* line 32, ../scss/partials/_typography.scss */
+.underline {
+  border-bottom: 2px solid black;
+}
+
+/* line 38, ../scss/partials/_typography.scss */
+.branding {
+  margin-top: 0rem;
+}
+/* line 40, ../scss/partials/_typography.scss */
+.branding-background {
+  height: 5rem;
+  width: 100%;
+  background: white;
+  position: absolute;
+  z-index: -1;
+}
+/* line 47, ../scss/partials/_typography.scss */
+.branding-title {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: black;
+}
+
+/* line 1, ../scss/partials/_navigation.scss */
+.navigation {
+  background: white;
+  border-top: 0.0625rem black solid;
+}
+/* line 7, ../scss/partials/_navigation.scss */
+.navigation-title-area-title {
+  display: inline-block;
+  margin-top: 0.25rem;
+}
+/* line 11, ../scss/partials/_navigation.scss */
+.navigation-title-area-image {
+  margin-left: 0.9375rem;
+  margin-top: -0.75rem;
+}
+/* line 18, ../scss/partials/_navigation.scss */
+.navigation-top-bar-section, .navigation .navigation-top-bar-section, .navigation .top-bar-section {
+  margin-top: 0.5rem;
+}
+/* line 22, ../scss/partials/_navigation.scss */
+.navigation-top-bar-section {
+  color: black;
+}
+/* line 24, ../scss/partials/_navigation.scss */
+.navigation-top-bar-section i {
+  font-size: 2rem;
+  color: black;
+  vertical-align: middle;
+}
+/* line 29, ../scss/partials/_navigation.scss */
+.navigation-top-bar-section ul {
+  background: white;
+}
+/* line 32, ../scss/partials/_navigation.scss */
+.navigation-top-bar-section li:not(.has-form) a:not(.button) {
+  background: white;
+  color: black;
+  font-size: 1rem;
+  vertical-align: middle;
+}
+/* line 37, ../scss/partials/_navigation.scss */
+.navigation-top-bar-section li:not(.has-form) a:not(.button):hover {
+  background: white;
+  color: black;
+}
+
+/* line 48, ../scss/partials/_navigation.scss */
+.top-bar, .navigation-top-bar, .navigation .top-bar {
   height: 4rem;
   background: white;
 }
 
-/* line 92, ../scss/style.scss */
+/* line 53, ../scss/partials/_navigation.scss */
 .bottom-fixed {
   width: 100%;
   left: 0;
@@ -10746,182 +10172,224 @@ th {
   z-index: 99;
 }
 
-/* line 101, ../scss/style.scss */
-.top-bar-section ul {
-  margin-top: 0.6rem;
+/* line 61, ../scss/partials/_navigation.scss */
+.next-article {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
-/* line 105, ../scss/style.scss */
-.top-bar-section li.divider {
-  border-right: 1px solid black;
+/* line 64, ../scss/partials/_navigation.scss */
+.next-article i {
+  font-size: 3rem;
+  vertical-align: middle;
 }
-/* line 109, ../scss/style.scss */
-.top-bar-section li:not(.has-form) a:not(.button) {
-  background: white;
-  color: black;
-  font-size: 1.1rem;
+/* line 68, ../scss/partials/_navigation.scss */
+.next-article-left {
+  float: left;
+}
+/* line 70, ../scss/partials/_navigation.scss */
+.next-article-left p {
+  display: inline-block;
   font-weight: 200;
-}
-/* line 116, ../scss/style.scss */
-.top-bar-section i {
+  color: #878787;
   font-size: 1.5rem;
-  margin-top: 0.1rem;
+  font-style: italic;
+  margin-left: 1rem;
+  line-height: 3rem;
+  margin-bottom: 0;
   vertical-align: middle;
-  color: black;
 }
-
-/* line 124, ../scss/style.scss */
-.contain-to-grid {
-  background: white;
-  border-top: 1px solid black;
+/* line 82, ../scss/partials/_navigation.scss */
+.next-article-right {
+  float: right;
 }
-
-/* line 129, ../scss/style.scss */
-.orbit-bullets-container {
-  display: none;
-}
-
-/* ============================ 
-4 UI
-============================ */
-/* line 137, ../scss/style.scss */
-.orbit-container {
-  margin: 4rem auto;
-  border: 0.5rem solid black;
-}
-
-/* line 143, ../scss/style.scss */
-a.project.title h3 {
+/* line 84, ../scss/partials/_navigation.scss */
+.next-article-right p {
   display: inline-block;
-  border-bottom: 0.1rem solid black;
+  font-weight: 200;
+  color: #878787;
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-right: 1rem;
+  line-height: 3rem;
+  margin-bottom: 0;
+  vertical-align: middle;
 }
 
-/* line 149, ../scss/style.scss */
-.project.visit {
-  height: 2rem;
-  width: 2rem;
-  margin: 0 0.25rem 0.25rem 0;
-  background: rgba(177, 175, 177, 0.25);
-  right: 0;
-  bottom: 0;
-  position: absolute;
+/* line 98, ../scss/partials/_navigation.scss */
+.index, .article-index {
+  margin-top: 2rem;
 }
-/* line 157, ../scss/style.scss */
-.project.visit:hover {
-  background: #463946;
+/* line 100, ../scss/partials/_navigation.scss */
+.index-side-nav, .index .index-side-nav, .article-index .index-side-nav, .index .side-nav, .article-index .side-nav, .index .article-index-side-nav, .article-index .article-index-side-nav {
+  padding: 0;
 }
-/* line 159, ../scss/style.scss */
-.project.visit:hover i {
+/* line 103, ../scss/partials/_navigation.scss */
+.index-side-nav li a:not(.button), .index .index-side-nav li a:not(.button), .article-index .index-side-nav li a:not(.button), .index .side-nav li a:not(.button), .article-index .side-nav li a:not(.button), .index .article-index-side-nav li a:not(.button), .article-index .article-index-side-nav li a:not(.button) {
   color: black;
 }
-/* line 163, ../scss/style.scss */
-.project.visit i {
-  font-size: 2rem;
-  color: #463946;
+
+/* line 111, ../scss/partials/_navigation.scss */
+.article-index {
+  margin-top: 2rem;
+}
+/* line 114, ../scss/partials/_navigation.scss */
+.article-index-side-nav, .article-index .index-side-nav, .article-index .side-nav, .article-index .article-index-side-nav {
+  padding: 0;
+}
+/* line 117, ../scss/partials/_navigation.scss */
+.article-index-side-nav li a:not(.button), .article-index .index-side-nav li a:not(.button), .article-index .side-nav li a:not(.button), .article-index .article-index-side-nav li a:not(.button) {
+  color: black;
 }
 
-/* line 169, ../scss/style.scss */
-.hidden {
-  visibility: hidden;
+/* line 1, ../scss/partials/_carousel.scss */
+#issue-carousel .item {
+  margin: 0rem;
+  display: inline-block;
+  float: left;
 }
 
-/* line 173, ../scss/style.scss */
-.project.container {
-  margin-bottom: 5rem;
+/* line 6, ../scss/partials/_carousel.scss */
+#issue-carousel .item img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-/* line 177, ../scss/style.scss */
-.project.thumbnail {
+/* line 14, ../scss/partials/_carousel.scss */
+.issue-contents-carousel .item {
   position: relative;
-  border: 0.25rem solid black;
+  width: 100%;
 }
-/* line 180, ../scss/style.scss */
-.project.thumbnail .orbit-container {
-  margin: 0;
-  border: none;
-}
-
-/* ============================ 
-5 Structure
-============================ */
-/* ============================ 
-6 Content
-============================ */
-/* line 195, ../scss/style.scss */
-.intro {
-  margin-top: 7rem;
-  margin-bottom: 2rem;
-}
-/* line 198, ../scss/style.scss */
-.intro.name {
-  font-size: 4rem;
-  text-align: center;
-  font-weight: 800;
-  color: black;
-}
-/* line 204, ../scss/style.scss */
-.intro.text {
-  font-size: 2rem;
-  font-weight: 800;
-  color: black;
-}
-
-/* line 212, ../scss/style.scss */
-.project-container {
-  margin-top: 5rem;
-}
-/* line 216, ../scss/style.scss */
-.project-description-title {
-  font-size: 2rem;
-  font-weight: 800;
-}
-/* line 220, ../scss/style.scss */
-.project-description-text {
-  margin-top: 0;
-  font-size: 1.25rem;
-  color: #463946;
-}
-/* line 226, ../scss/style.scss */
-.project-link {
-  background-color: white;
-  border: 0.15rem solid black;
-  display: inline-block;
-}
-/* line 231, ../scss/style.scss */
-.project-source {
-  background-color: white;
-  border: 0.15rem solid black;
-  display: inline-block;
-}
-
-/* ============================ 
-7 Typography
-============================ */
-/* line 243, ../scss/style.scss */
-.underline {
-  border-bottom: 2px solid black;
-}
-
-/* line 248, ../scss/style.scss */
-.branding.background {
-  margin-top: 3rem;
-  height: 7rem;
-  width: 1px;
-  background: black;
+/* line 19, ../scss/partials/_carousel.scss */
+.issue-contents-carousel-item-content {
   position: absolute;
-}
-/* line 255, ../scss/style.scss */
-.branding.title {
-  font-size: 5rem;
-  font-weight: 800;
-  text-transform: uppercase;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
   color: white;
-  text-align: right;
-  padding-right: 5.5rem;
-  vertical-align: middle;
-  position: absolute;
-  right: 0;
+  padding: 0.625rem;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  height: 150px;
+  display: block;
+  bottom: -80px;
+  line-height: 25pt;
+}
+/* line 36, ../scss/partials/_carousel.scss */
+.issue-contents-carousel-item-content:hover {
+  -moz-transform: translateY(-53.333%);
+  -o-transform: translateY(-53.333%);
+  -webkit-transform: translateY(-53.333%);
+  transform: translateY(-53.333%);
+}
+/* line 44, ../scss/partials/_carousel.scss */
+.issue-contents-carousel-item-title {
+  color: white;
 }
 
-/* ============================ 
-8 Media Queries
-============================ */
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.23
+*/
+/* line 55, ../scss/partials/_carousel.scss */
+.owl-theme .owl-controls {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Styling Next and Prev buttons */
+/* line 62, ../scss/partials/_carousel.scss */
+.owl-theme .owl-controls .owl-buttons div {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+/* line 66, ../scss/partials/_carousel.scss */
+.owl-theme .owl-controls .owl-buttons div i {
+  font-size: 2rem;
+}
+
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+/* line 72, ../scss/partials/_carousel.scss */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover {
+  filter: Alpha(Opacity=100);
+  /*IE7 fix*/
+  opacity: 1;
+  text-decoration: none;
+}
+
+/* Styling Pagination*/
+/* line 80, ../scss/partials/_carousel.scss */
+.owl-theme .owl-controls .owl-page {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /*IE7 life-saver */
+}
+
+/* line 85, ../scss/partials/_carousel.scss */
+.owl-theme .owl-controls .owl-page span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 5px 7px;
+  filter: Alpha(Opacity=50);
+  /*IE7 fix*/
+  opacity: 0.5;
+  background: #869791;
+}
+
+/* line 95, ../scss/partials/_carousel.scss */
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+  filter: Alpha(Opacity=100);
+  /*IE7 fix*/
+  opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+/* line 103, ../scss/partials/_carousel.scss */
+.owl-theme .owl-controls .owl-page span.owl-numbers {
+  height: auto;
+  width: auto;
+  color: white;
+  padding: 2px 10px;
+}
+/* line 108, ../scss/partials/_carousel.scss */
+.owl-theme .owl-controls .owl-page span.owl-numbers i {
+  font-size: 3rem;
+}
+
+/* preloading images */
+/* line 114, ../scss/partials/_carousel.scss */
+.owl-item.loading {
+  min-height: 150px;
+  background: url(AjaxLoader.gif) no-repeat center center;
+}
+
+/* line 119, ../scss/partials/_carousel.scss */
+.wrapper-with-margin {
+  margin: 0px 50px;
+}
+
+/* line 124, ../scss/partials/_carousel.scss */
+.owl-theme .owl-controls .owl-buttons div {
+  position: absolute;
+}
+
+/* line 128, ../scss/partials/_carousel.scss */
+.owl-theme .owl-controls .owl-buttons .owl-prev {
+  left: 0.625rem;
+  top: 45%;
+}
+
+/* line 133, ../scss/partials/_carousel.scss */
+.owl-theme .owl-controls .owl-buttons .owl-next {
+  right: 0.625rem;
+  top: 45%;
+}

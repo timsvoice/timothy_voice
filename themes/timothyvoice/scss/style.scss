@@ -1,7 +1,5 @@
-@import "foundation";
-
 /*!
-Theme Name: Timothy oice
+Theme Name: Timothy Voice
 Theme URI: www.timothyvoice.com/timothyvoice
 Description: Theme for Timothy Voice's Portfolio
 Author: Timothy Voice
@@ -10,276 +8,32 @@ Version: 1.0
 Tags: portfolio, clean, typography, simple
 */
 
-/* Table of Contents
-* ============================= 
-*	0 Global
-*	1 Zurb Foundation Imports
-*	2 Variables
-*	3 Navigation
-*	4 UI
-*	5 Structure
-*	6 Content
-*	7 Typography
-*	8 Media Queries
-* =============================  
-*/
+//vendor
 
-/* ============================ 
-0 Global
-============================ */
-@import "compass";
-
-* {
-	font-family: 'ariel';
-}
-
-// [class*="column"] + [class*="column"]:last-child {
-// 	float: none;
-// }
-
-.alpha {
-	padding-left: 0px !important;
-}
-
-.beta {
-	padding-right: 0px !important;
-}
-
-/* ============================ 
-1 Zurb Foundation Imports 
-============================ */
-
+@import "vendor/settings";
+@import "vendor/owl-carousel";
 @import "foundation";
 @import "normalize";
+@import "compass";
 
-/* ============================ 
-2 Variables 
-============================ */
+//modules
 
-// colors
-$black:hsla(0,0,0%,1);
-$white:hsla(0,0%,100%, 1);
-$gray:hsla(300, 1%, 69%, 0.25);
-$dark-gray:hsla(300, 10%, 25%, 1);
+@import "modules/variables";
+@import "modules/mixins";
+@import "modules/functions";
 
-$ggs:hsla(155,68%,25%,1);
-$mallydoor:hsla(0,0,0%,1);
-$octavejournal:hsla(237,48%,45%,1);
-$octavelivingroom:hsla(300, 1%, 69%, 1);
+//partials
 
-
-// borders and backgrounds
-$background: url('../../assets/images/background.png') repeat;
-
-$light-border:0.15rem solid $black;
-$heavy-border:0.1rem solid ;
-
-// typography
-$font:'Open Sans', sans-serif;
-$heavy-text:800;
-$medium-text:400;
-$light-text:200;
-
-/* ============================ 
-3 Navigation
-============================ */   
-
-.top-bar {
-	height: 4rem;
-	background: white;
-}
-
-.bottom-fixed {
-	width: 100%;
-	left: 0;
-	position: fixed;
-	bottom: 0;
-	z-index: 99;
-}
-
-.top-bar-section {
-	ul {
-		margin-top: 0.6rem;
-	}
-
-	li.divider {
-		border-right: 1px solid $black;
-	}
-	
-	li:not(.has-form) a:not(.button) {
-		background: white;
-		color: $black;
-		font-size: 1.1rem;
-		font-weight: $light-text;
-	}
-
-	i {
-		font-size: 1.5rem;
-		margin-top: 0.1rem;
-		vertical-align: middle;
-		color: $black;
-	}
-}
-
-.contain-to-grid {
-	background: white;
-	border-top: 1px solid $black;
-}
-
-.orbit-bullets-container {
-	display: none
-}
-
-/* ============================ 
-4 UI
-============================ */   
-
-.orbit-container {
-	margin: 4rem auto;
-	border: 0.5rem solid $black;
-}
-
-a.project.title {
-	h3 {
-		display: inline-block;
-		border-bottom: 0.1rem solid $black;
-	}
-}
-
-.project.visit {
-	height: 2rem;
-	width: 2rem;
-	margin: 0 0.25rem 0.25rem 0;
-	background: $gray;
-	right: 0;
-	bottom: 0;
-	position: absolute;
-	&:hover {
-		background: $dark-gray;
-		i {
-			color: $black;
-		}
-	}
-	i {
-		font-size: 2rem;
-		color: $dark-gray;
-	}
-}
-
-.hidden {
-	visibility: hidden;
-}
-
-.project.container {
-	margin-bottom: 5rem;
-}
-
-.project.thumbnail {
-	position: relative;
-	border: 0.25rem solid $black;
-	.orbit-container {
-		margin: 0;
-		border: none;
-	}
-}
-
-/* ============================ 
-5 Structure
-============================ */   
-
-
-/* ============================ 
-6 Content
-============================ */   
-
-.intro {
-	margin-top: 7rem;
-	margin-bottom: 2rem;
-	&.name {
-		font-size: 4rem;
-		text-align: center;
-		font-weight: $heavy-text;		
-		color: $black;
-	}
-	&.text {
-		font-size: 2rem;		
-		font-weight: $heavy-text;
-		color: $black;
-	}
-}
-
-.project {
-	&-container {
-		margin-top: 5rem;
-	}
-	&-description {
-		&-title {
-			font-size: 2rem;
-			font-weight: $heavy-text;
-		}
-		&-text {
-			margin-top: 0;
-			font-size: 1.25rem;
-			color: $dark-gray;
-		}
-	}
-	&-link {
-		background-color: $white;
-		border: $light-border;
-		display: inline-block; 
-	}
-	&-source {
-		background-color: $white;
-		border: $light-border;
-		display: inline-block; 	
-	}
-}
-
-
-/* ============================ 
-7 Typography
-============================ */   
-
-.underline {
-	border-bottom: 2px solid $black;
-}
-
-.branding {
-	&.background {
-		margin-top: 3rem;
-		height: 7rem;
-		width: 1px;
-		background: $black;
-		position: absolute;
-	}
-	&.title {
-		font-size: 5rem;
-		font-weight: $heavy-text;
-		text-transform: uppercase;
-		color: $white;
-		text-align: right;
-		padding-right: 5.5rem;
-		vertical-align: middle;
-		position: absolute;
-		right: 0;
-	}
-}
-
-/* ============================ 
-8 Media Queries
-============================ */   
-
-@media #{-only} { }
-
-@media #{-only} { }
-
-@media #{-only} { }
-
-@media #{-up} { }
-
-@media #{-up} { }
-
-
+@import "partials/grid";
+@import "partials/typography";
+@import "partials/forms";
+@import "partials/orbit";
+@import "partials/articles";
+@import "partials/navigation";
+@import "partials/login";
+@import "partials/category";
+@import "partials/carousel";
+  
 
 // Or selectively include components
 // @import
