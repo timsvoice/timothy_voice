@@ -1,20 +1,37 @@
-<?php get_header();?>
+<?php get_header( ); ?>
 
-<div class="feature project large-12 columns small-centered">
-  <ul class="example-orbit" data-orbit>
-  <li>
-    <img src="<?php bloginfo('template_url'); ?>/css/assets/ggs_about.png" alt="slide 1" />
+<div class="container"> 
+	
+	<div class="row">
 
-  </li>
-  <li>
-    <img src="<?php bloginfo('template_url'); ?>/css/assets/ggs_contact.png" alt="slide 2" />
 
-  </li>
-  <li>
-    <img src="<?php bloginfo('template_url'); ?>/css/assets/ggs_homepage.png" alt="slide 3" />
-    
-  </li>
-</ul>
-</div>
+		<div class="article-single large-12 columns">
+			<h2 class="article-single-title">
+				<?php the_title(); ?>			
+			</h2>			
+			<p class="article-single-contents-meta">
+						By <?php the_author_posts_link(); ?> ,  filed under <?php the_category( ', ' ); ?> on <?php the_date( ); ?>
+					</p>
+			<!-- <h3 class="article-single-date">13/12/13</h3> -->
+			
+			<?php while ( have_posts()) : the_post(); ?>
 
-<?php get_footer(); ?>
+			<div class="article-single-contents">				
+				<div class="article-single-contents-text large-8 medium-8 columns">
+						
+						<p class="article-single-contents-text-body">
+							<?php the_content( ); ?>
+						</p>
+						
+				</div><!-- article-single-contents-text -->
+			</div><!-- article-single-contents -->
+
+			<?php endwhile ?>
+			
+		</div><!-- article -->
+	</div><!-- row -->
+	
+
+</div><!-- container -->
+
+<?php get_footer( ); ?>
